@@ -1,0 +1,603 @@
+INFO - 2024-10-30 01:13:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 01:13:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-10-30 01:19:34 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '), 2), "%") AS agree_count, CONCAT(FORMAT(SUM(CASE WHEN responses.response_va...' at line 1 in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `departm...', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `departm...')
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `departm...')
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `departm...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\user 1\Desktop\Starter\app\Controllers\Home.php(80): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#12 {main}
+CRITICAL - 2024-10-30 01:19:34 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '), 2), "%") AS agree_count, CONCAT(FORMAT(SUM(CASE WHEN responses.response_va...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `department_tbl`.`department`, COUNT(CASE WHEN responses.question_id = 1 THEN 1 END) AS total_responses, CONCAT(FORMAT(SUM(CASE WHEN responses.response_value = "Agree" AND responses.question_id = 1 THEN 1 ELSE 0 END) * 100.0 / NULLIF(COUNT(CASE WHEN responses.question_id = 1 THEN 1 END), 0)), 2), "%") AS agree_count, CONCAT(FORMAT(SUM(CASE WHEN responses.response_value = "Disagree" AND responses.question_id = 1 THEN 1 ELSE 0 END) * 100.0 / NULLIF(COUNT(CASE WHEN responses.question_id = 1 THEN 1 END), 0)), 2), "%") AS disagree_count, CONCAT(FORMAT(SUM(CASE WHEN responses.response_value = "Neither Agree nor Disagree" AND responses.question_id = 1 THEN 1 ELSE 0 END) * 100.0 / NULLIF(COUNT(CASE WHEN responses.question_id = 1 THEN 1 END), 2), 0)), "%") AS neither_agree_nor_disagree, CONCAT(FORMAT(SUM(CASE WHEN responses.response_value = "Strongly Agree" AND responses.question_id = 1 THEN 1 ELSE 0 END) * 100.0 / NULLIF(COUNT(CASE WHEN responses.question_id = 1 THEN 1 END), 0)), 2), "%") AS strongly_agree_count, CONCAT(FORMAT(SUM(CASE WHEN responses.response_value = "Strongly Disagree" AND responses.question_id = 1 THEN 1 ELSE 0 END) * 100.0 / NULLIF(COUNT(CASE WHEN responses.question_id = 1 THEN 1 END), 0)), 2), "%") AS strongly_disagree_count
+FROM `responses`
+JOIN `department_tbl` ON `responses`.`department_id` = `department_tbl`.`department_id`
+JOIN `respondent_tbl` ON `responses`.`respondent_id` = `respondent_tbl`.`id`
+GROUP BY `department_tbl`.`department`
+ORDER BY `department_tbl`.`department`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `department_tbl`.`department`, COUNT(CASE WHEN responses.question_id = 1 THEN 1 END) AS total_responses, CONCAT(FORMAT(SUM(CASE WHEN responses.response_value = "Agree" AND responses.question_id = 1 THEN 1 ELSE 0 END) * 100.0 / NULLIF(COUNT(CASE WHEN responses.question_id = 1 THEN 1 END), 0)), 2), "%") AS agree_count, CONCAT(FORMAT(SUM(CASE WHEN responses.response_value = "Disagree" AND responses.question_id = 1 THEN 1 ELSE 0 END) * 100.0 / NULLIF(COUNT(CASE WHEN responses.question_id = 1 THEN 1 END), 0)), 2), "%") AS disagree_count, CONCAT(FORMAT(SUM(CASE WHEN responses.response_value = "Neither Agree nor Disagree" AND responses.question_id = 1 THEN 1 ELSE 0 END) * 100.0 / NULLIF(COUNT(CASE WHEN responses.question_id = 1 THEN 1 END), 2), 0)), "%") AS neither_agree_nor_disagree, CONCAT(FORMAT(SUM(CASE WHEN responses.response_value = "Strongly Agree" AND responses.question_id = 1 THEN 1 ELSE 0 END) * 100.0 / NULLIF(COUNT(CASE WHEN responses.question_id = 1 THEN 1 END), 0)), 2), "%") AS strongly_agree_count, CONCAT(FORMAT(SUM(CASE WHEN responses.response_value = "Strongly Disagree" AND responses.question_id = 1 THEN 1 ELSE 0 END) * 100.0 / NULLIF(COUNT(CASE WHEN responses.question_id = 1 THEN 1 END), 0)), 2), "%") AS strongly_disagree_count
+FROM `responses`
+JOIN `department_tbl` ON `responses`.`department_id` = `department_tbl`.`department_id`
+JOIN `respondent_tbl` ON `responses`.`respondent_id` = `respondent_tbl`.`id`
+GROUP BY `department_tbl`.`department`
+ORDER BY `department_tbl`.`department`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `department_tbl`.`department`, COUNT(CASE WHEN responses.question_id = 1 THEN 1 END) AS total_responses, CONCAT(FORMAT(SUM(CASE WHEN responses.response_value = "Agree" AND responses.question_id = 1 THEN 1 ELSE 0 END) * 100.0 / NULLIF(COUNT(CASE WHEN responses.question_id = 1 THEN 1 END), 0)), 2), "%") AS agree_count, CONCAT(FORMAT(SUM(CASE WHEN responses.response_value = "Disagree" AND responses.question_id = 1 THEN 1 ELSE 0 END) * 100.0 / NULLIF(COUNT(CASE WHEN responses.question_id = 1 THEN 1 END), 0)), 2), "%") AS disagree_count, CONCAT(FORMAT(SUM(CASE WHEN responses.response_value = "Neither Agree nor Disagree" AND responses.question_id = 1 THEN 1 ELSE 0 END) * 100.0 / NULLIF(COUNT(CASE WHEN responses.question_id = 1 THEN 1 END), 2), 0)), "%") AS neither_agree_nor_disagree, CONCAT(FORMAT(SUM(CASE WHEN responses.response_value = "Strongly Agree" AND responses.question_id = 1 THEN 1 ELSE 0 END) * 100.0 / NULLIF(COUNT(CASE WHEN responses.question_id = 1 THEN 1 END), 0)), 2), "%") AS strongly_agree_count, CONCAT(FORMAT(SUM(CASE WHEN responses.response_value = "Strongly Disagree" AND responses.question_id = 1 THEN 1 ELSE 0 END) * 100.0 / NULLIF(COUNT(CASE WHEN responses.question_id = 1 THEN 1 END), 0)), 2), "%") AS strongly_disagree_count
+FROM `responses`
+JOIN `department_tbl` ON `responses`.`department_id` = `department_tbl`.`department_id`
+JOIN `respondent_tbl` ON `responses`.`respondent_id` = `respondent_tbl`.`id`
+GROUP BY `department_tbl`.`department`
+ORDER BY `department_tbl`.`department`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `department_tbl`.`department`, COUNT(CASE WHEN responses.question_id = 1 THEN 1 END) AS total_responses, CONCAT(FORMAT(SUM(CASE WHEN responses.response_value = "Agree" AND responses.question_id = 1 THEN 1 ELSE 0 END) * 100.0 / NULLIF(COUNT(CASE WHEN responses.question_id = 1 THEN 1 END), 0)), 2), "%") AS agree_count, CONCAT(FORMAT(SUM(CASE WHEN responses.response_value = "Disagree" AND responses.question_id = 1 THEN 1 ELSE 0 END) * 100.0 / NULLIF(COUNT(CASE WHEN responses.question_id = 1 THEN 1 END), 0)), 2), "%") AS disagree_count, CONCAT(FORMAT(SUM(CASE WHEN responses.response_value = "Neither Agree nor Disagree" AND responses.question_id = 1 THEN 1 ELSE 0 END) * 100.0 / NULLIF(COUNT(CASE WHEN responses.question_id = 1 THEN 1 END), 2), 0)), "%") AS neither_agree_nor_disagree, CONCAT(FORMAT(SUM(CASE WHEN responses.response_value = "Strongly Agree" AND responses.question_id = 1 THEN 1 ELSE 0 END) * 100.0 / NULLIF(COUNT(CASE WHEN responses.question_id = 1 THEN 1 END), 0)), 2), "%") AS strongly_agree_count, CONCAT(FORMAT(SUM(CASE WHEN responses.response_value = "Strongly Disagree" AND responses.question_id = 1 THEN 1 ELSE 0 END) * 100.0 / NULLIF(COUNT(CASE WHEN responses.question_id = 1 THEN 1 END), 0)), 2), "%") AS strongly_disagree_count
+FROM `responses`
+JOIN `department_tbl` ON `responses`.`department_id` = `department_tbl`.`department_id`
+JOIN `respondent_tbl` ON `responses`.`respondent_id` = `respondent_tbl`.`id`
+GROUP BY `department_tbl`.`department`
+ORDER BY `department_tbl`.`department`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(80): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+ERROR - 2024-10-30 01:20:35 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '), "%") AS neither_agree_nor_disagree, CONCAT(FORMAT((SUM(CASE WHEN responses...' at line 1 in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `departm...', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `departm...')
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `departm...')
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `departm...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\user 1\Desktop\Starter\app\Controllers\Home.php(80): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#12 {main}
+CRITICAL - 2024-10-30 01:20:35 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '), "%") AS neither_agree_nor_disagree, CONCAT(FORMAT((SUM(CASE WHEN responses...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `department_tbl`.`department`, COUNT(CASE WHEN responses.question_id = 1 THEN 1 END) AS total_responses, CONCAT(FORMAT((SUM(CASE WHEN responses.response_value = "Agree" AND responses.question_id = 1 THEN 1 ELSE 0 END) * 100.0 / NULLIF(COUNT(CASE WHEN responses.question_id = 1 THEN 1 END), 0)), 2), "%") AS agree_count, CONCAT(FORMAT((SUM(CASE WHEN responses.response_value = "Disagree" AND responses.question_id = 1 THEN 1 ELSE 0 END) * 100.0 / NULLIF(COUNT(CASE WHEN responses.question_id = 1 THEN 1 END), 0)), 2), "%") AS disagree_count, CONCAT(FORMAT((SUM(CASE WHEN responses.response_value = "Neither Agree nor Disagree" AND responses.question_id = 1 THEN 1 ELSE 0 END) * 100.0 / NULLIF(COUNT(CASE WHEN responses.question_id = 1 THEN 1 END), 2), 0)), "%") AS neither_agree_nor_disagree, CONCAT(FORMAT((SUM(CASE WHEN responses.response_value = "Strongly Agree" AND responses.question_id = 1 THEN 1 ELSE 0 END) * 100.0 / NULLIF(COUNT(CASE WHEN responses.question_id = 1 THEN 1 END), 0)), 2), "%") AS strongly_agree_count, CONCAT(FORMAT((SUM(CASE WHEN responses.response_value = "Strongly Disagree" AND responses.question_id = 1 THEN 1 ELSE 0 END) * 100.0 / NULLIF(COUNT(CASE WHEN responses.question_id = 1 THEN 1 END), 0)), 2), "%") AS strongly_disagree_count
+FROM `responses`
+JOIN `department_tbl` ON `responses`.`department_id` = `department_tbl`.`department_id`
+JOIN `respondent_tbl` ON `responses`.`respondent_id` = `respondent_tbl`.`id`
+GROUP BY `department_tbl`.`department`
+ORDER BY `department_tbl`.`department`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `department_tbl`.`department`, COUNT(CASE WHEN responses.question_id = 1 THEN 1 END) AS total_responses, CONCAT(FORMAT((SUM(CASE WHEN responses.response_value = "Agree" AND responses.question_id = 1 THEN 1 ELSE 0 END) * 100.0 / NULLIF(COUNT(CASE WHEN responses.question_id = 1 THEN 1 END), 0)), 2), "%") AS agree_count, CONCAT(FORMAT((SUM(CASE WHEN responses.response_value = "Disagree" AND responses.question_id = 1 THEN 1 ELSE 0 END) * 100.0 / NULLIF(COUNT(CASE WHEN responses.question_id = 1 THEN 1 END), 0)), 2), "%") AS disagree_count, CONCAT(FORMAT((SUM(CASE WHEN responses.response_value = "Neither Agree nor Disagree" AND responses.question_id = 1 THEN 1 ELSE 0 END) * 100.0 / NULLIF(COUNT(CASE WHEN responses.question_id = 1 THEN 1 END), 2), 0)), "%") AS neither_agree_nor_disagree, CONCAT(FORMAT((SUM(CASE WHEN responses.response_value = "Strongly Agree" AND responses.question_id = 1 THEN 1 ELSE 0 END) * 100.0 / NULLIF(COUNT(CASE WHEN responses.question_id = 1 THEN 1 END), 0)), 2), "%") AS strongly_agree_count, CONCAT(FORMAT((SUM(CASE WHEN responses.response_value = "Strongly Disagree" AND responses.question_id = 1 THEN 1 ELSE 0 END) * 100.0 / NULLIF(COUNT(CASE WHEN responses.question_id = 1 THEN 1 END), 0)), 2), "%") AS strongly_disagree_count
+FROM `responses`
+JOIN `department_tbl` ON `responses`.`department_id` = `department_tbl`.`department_id`
+JOIN `respondent_tbl` ON `responses`.`respondent_id` = `respondent_tbl`.`id`
+GROUP BY `department_tbl`.`department`
+ORDER BY `department_tbl`.`department`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `department_tbl`.`department`, COUNT(CASE WHEN responses.question_id = 1 THEN 1 END) AS total_responses, CONCAT(FORMAT((SUM(CASE WHEN responses.response_value = "Agree" AND responses.question_id = 1 THEN 1 ELSE 0 END) * 100.0 / NULLIF(COUNT(CASE WHEN responses.question_id = 1 THEN 1 END), 0)), 2), "%") AS agree_count, CONCAT(FORMAT((SUM(CASE WHEN responses.response_value = "Disagree" AND responses.question_id = 1 THEN 1 ELSE 0 END) * 100.0 / NULLIF(COUNT(CASE WHEN responses.question_id = 1 THEN 1 END), 0)), 2), "%") AS disagree_count, CONCAT(FORMAT((SUM(CASE WHEN responses.response_value = "Neither Agree nor Disagree" AND responses.question_id = 1 THEN 1 ELSE 0 END) * 100.0 / NULLIF(COUNT(CASE WHEN responses.question_id = 1 THEN 1 END), 2), 0)), "%") AS neither_agree_nor_disagree, CONCAT(FORMAT((SUM(CASE WHEN responses.response_value = "Strongly Agree" AND responses.question_id = 1 THEN 1 ELSE 0 END) * 100.0 / NULLIF(COUNT(CASE WHEN responses.question_id = 1 THEN 1 END), 0)), 2), "%") AS strongly_agree_count, CONCAT(FORMAT((SUM(CASE WHEN responses.response_value = "Strongly Disagree" AND responses.question_id = 1 THEN 1 ELSE 0 END) * 100.0 / NULLIF(COUNT(CASE WHEN responses.question_id = 1 THEN 1 END), 0)), 2), "%") AS strongly_disagree_count
+FROM `responses`
+JOIN `department_tbl` ON `responses`.`department_id` = `department_tbl`.`department_id`
+JOIN `respondent_tbl` ON `responses`.`respondent_id` = `respondent_tbl`.`id`
+GROUP BY `department_tbl`.`department`
+ORDER BY `department_tbl`.`department`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `department_tbl`.`department`, COUNT(CASE WHEN responses.question_id = 1 THEN 1 END) AS total_responses, CONCAT(FORMAT((SUM(CASE WHEN responses.response_value = "Agree" AND responses.question_id = 1 THEN 1 ELSE 0 END) * 100.0 / NULLIF(COUNT(CASE WHEN responses.question_id = 1 THEN 1 END), 0)), 2), "%") AS agree_count, CONCAT(FORMAT((SUM(CASE WHEN responses.response_value = "Disagree" AND responses.question_id = 1 THEN 1 ELSE 0 END) * 100.0 / NULLIF(COUNT(CASE WHEN responses.question_id = 1 THEN 1 END), 0)), 2), "%") AS disagree_count, CONCAT(FORMAT((SUM(CASE WHEN responses.response_value = "Neither Agree nor Disagree" AND responses.question_id = 1 THEN 1 ELSE 0 END) * 100.0 / NULLIF(COUNT(CASE WHEN responses.question_id = 1 THEN 1 END), 2), 0)), "%") AS neither_agree_nor_disagree, CONCAT(FORMAT((SUM(CASE WHEN responses.response_value = "Strongly Agree" AND responses.question_id = 1 THEN 1 ELSE 0 END) * 100.0 / NULLIF(COUNT(CASE WHEN responses.question_id = 1 THEN 1 END), 0)), 2), "%") AS strongly_agree_count, CONCAT(FORMAT((SUM(CASE WHEN responses.response_value = "Strongly Disagree" AND responses.question_id = 1 THEN 1 ELSE 0 END) * 100.0 / NULLIF(COUNT(CASE WHEN responses.question_id = 1 THEN 1 END), 0)), 2), "%") AS strongly_disagree_count
+FROM `responses`
+JOIN `department_tbl` ON `responses`.`department_id` = `department_tbl`.`department_id`
+JOIN `respondent_tbl` ON `responses`.`respondent_id` = `respondent_tbl`.`id`
+GROUP BY `department_tbl`.`department`
+ORDER BY `department_tbl`.`department`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(80): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-30 01:21:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 01:30:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 01:30:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 01:31:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 01:52:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 01:55:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 01:58:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 01:59:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 01:59:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:00:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:01:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:02:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:06:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:07:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:08:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:09:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:09:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:10:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:10:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:11:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:11:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:11:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:13:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:14:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:15:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:16:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:16:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:16:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:16:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:17:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:19:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-10-30 02:21:38 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '), "%") AS response_count
+FROM `responses`
+GROUP BY `question_id`, `response_...' at line 1 in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `questio...', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `questio...')
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `questio...')
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `questio...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\user 1\Desktop\Starter\app\Controllers\Home.php(45): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#12 {main}
+CRITICAL - 2024-10-30 02:21:38 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '), "%") AS response_count
+FROM `responses`
+GROUP BY `question_id`, `response_...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `question_id`, `response_value`, COUNT(*) * 100.0 / NULLIF(COUNT(CASE WHEN responses.question_id = 1 THEN 1 END), 0)), "%") AS response_count
+FROM `responses`
+GROUP BY `question_id`, `response_value`
+ORDER BY `question_id`, `response_value`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `question_id`, `response_value`, COUNT(*) * 100.0 / NULLIF(COUNT(CASE WHEN responses.question_id = 1 THEN 1 END), 0)), "%") AS response_count
+FROM `responses`
+GROUP BY `question_id`, `response_value`
+ORDER BY `question_id`, `response_value`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `question_id`, `response_value`, COUNT(*) * 100.0 / NULLIF(COUNT(CASE WHEN responses.question_id = 1 THEN 1 END), 0)), "%") AS response_count
+FROM `responses`
+GROUP BY `question_id`, `response_value`
+ORDER BY `question_id`, `response_value`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `question_id`, `response_value`, COUNT(*) * 100.0 / NULLIF(COUNT(CASE WHEN responses.question_id = 1 THEN 1 END), 0)), "%") AS response_count
+FROM `responses`
+GROUP BY `question_id`, `response_value`
+ORDER BY `question_id`, `response_value`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(45): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-30 02:22:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:22:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-10-30 02:25:33 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'THEN 1 END)*100, 0), "%") AS response_count
+FROM `responses`
+GROUP BY `questi...' at line 1 in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `questio...', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `questio...')
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `questio...')
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `questio...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\user 1\Desktop\Starter\app\Controllers\Home.php(49): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#12 {main}
+CRITICAL - 2024-10-30 02:25:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'THEN 1 END)*100, 0), "%") AS response_count
+FROM `responses`
+GROUP BY `questi...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `question_id`, `response_value`, CONCAT(COUNT(*) / responses.question_id = 1 THEN 1 END)*100, 0), "%") AS response_count
+FROM `responses`
+GROUP BY `question_id`, `response_value`
+ORDER BY `question_id`, `response_value`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `question_id`, `response_value`, CONCAT(COUNT(*) / responses.question_id = 1 THEN 1 END)*100, 0), "%") AS response_count
+FROM `responses`
+GROUP BY `question_id`, `response_value`
+ORDER BY `question_id`, `response_value`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `question_id`, `response_value`, CONCAT(COUNT(*) / responses.question_id = 1 THEN 1 END)*100, 0), "%") AS response_count
+FROM `responses`
+GROUP BY `question_id`, `response_value`
+ORDER BY `question_id`, `response_value`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `question_id`, `response_value`, CONCAT(COUNT(*) / responses.question_id = 1 THEN 1 END)*100, 0), "%") AS response_count
+FROM `responses`
+GROUP BY `question_id`, `response_value`
+ORDER BY `question_id`, `response_value`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(49): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-30 02:28:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:29:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:29:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:30:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:31:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:35:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:36:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:36:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:37:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:38:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:38:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:38:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:38:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:39:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:40:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:41:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:42:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:42:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:44:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:45:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-30 02:45:41 --> Undefined variable $perQuestion1
+in APPPATH\Views\pages\blog.php on line 116.
+ 1 APPPATH\Views\pages\blog.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $perQuestion1', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 116)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(87): view('/pages/blog', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-30 02:47:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:48:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:49:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:53:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:54:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 02:58:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 03:00:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 03:01:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 03:02:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 03:04:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 03:05:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 03:11:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 03:11:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 03:14:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 03:15:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 03:22:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 03:26:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-30 03:26:28 --> Undefined variable $data
+in APPPATH\Views\pages\blog.php on line 120.
+ 1 APPPATH\Views\pages\blog.php(120): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 120)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(206): view('/pages/blog', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-30 03:27:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-30 03:27:11 --> Undefined variable $data
+in APPPATH\Views\pages\blog.php on line 120.
+ 1 APPPATH\Views\pages\blog.php(120): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 120)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(207): view('/pages/blog', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-30 03:27:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-30 03:27:42 --> Undefined variable $data
+in APPPATH\Views\pages\blog.php on line 120.
+ 1 APPPATH\Views\pages\blog.php(120): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 120)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(206): view('/pages/blog', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-30 03:28:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-30 03:28:10 --> Undefined variable $data
+in APPPATH\Views\pages\blog.php on line 120.
+ 1 APPPATH\Views\pages\blog.php(120): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 120)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(207): view('/pages/blog', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-30 03:28:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 03:29:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-30 03:29:34 --> Undefined variable $data
+in APPPATH\Views\pages\blog.php on line 120.
+ 1 APPPATH\Views\pages\blog.php(120): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 120)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(208): view('/pages/blog', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-30 03:31:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-30 03:31:28 --> Undefined variable $data
+in APPPATH\Views\pages\blog.php on line 120.
+ 1 APPPATH\Views\pages\blog.php(120): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 120)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(208): view('/pages/blog', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-30 03:32:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-30 03:32:04 --> Undefined variable $data
+in APPPATH\Views\pages\blog.php on line 120.
+ 1 APPPATH\Views\pages\blog.php(120): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 120)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(208): view('/pages/blog', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-30 03:32:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 03:36:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 03:37:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 03:38:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 05:08:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 05:09:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 05:10:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 05:11:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 05:12:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 05:14:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 05:15:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 05:16:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 05:17:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-30 05:17:47 --> number_format(): Argument #1 ($num) must be of type float, string given
+in APPPATH\Views\pages\blog.php on line 203.
+ 1 APPPATH\Views\pages\blog.php(203): number_format('33.33333%', 2)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(209): view('/pages/blog', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-30 05:19:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 05:24:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 05:25:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 05:25:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 05:28:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 05:29:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 05:30:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 05:31:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 05:33:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 05:34:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 05:34:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 05:34:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 05:37:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-30 05:37:23 --> number_format(): Argument #1 ($num) must be of type float, string given
+in APPPATH\Views\pages\blog.php on line 126.
+ 1 APPPATH\Views\pages\blog.php(126): number_format('50.00000%', 2)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(90): view('/pages/blog', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-30 05:40:42 --> syntax error, unexpected token "<", expecting end of file
+in APPPATH\Views\pages\blog.php on line 156.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 3 APPPATH\Controllers\Home.php(90): view('/pages/blog', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-30 05:42:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-30 05:42:22 --> number_format(): Argument #1 ($num) must be of type float, string given
+in APPPATH\Views\pages\blog.php on line 126.
+ 1 APPPATH\Views\pages\blog.php(126): number_format('50.00000%', 2)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(90): view('/pages/blog', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-30 05:45:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-30 05:45:17 --> number_format(): Argument #1 ($num) must be of type float, string given
+in APPPATH\Views\pages\blog.php on line 126.
+ 1 APPPATH\Views\pages\blog.php(126): number_format('50.00000%', 2)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(90): view('/pages/blog', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-30 05:49:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 05:50:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-30 05:50:20 --> number_format(): Argument #1 ($num) must be of type float, string given
+in APPPATH\Views\pages\blog.php on line 126.
+ 1 APPPATH\Views\pages\blog.php(126): number_format('50.00000%', 2)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(90): view('/pages/blog', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-30 05:51:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-30 05:51:52 --> Call to undefined function renderQuestionTable()
+in APPPATH\Views\pages\blog.php on line 105.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 4 APPPATH\Controllers\Home.php(90): view('/pages/blog', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-30 05:52:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-30 05:52:04 --> Call to undefined function renderQuestionTable()
+in APPPATH\Views\pages\blog.php on line 105.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 4 APPPATH\Controllers\Home.php(90): view('/pages/blog', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-30 05:52:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-30 05:52:08 --> Call to undefined function renderQuestionTable()
+in APPPATH\Views\pages\blog.php on line 105.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 4 APPPATH\Controllers\Home.php(90): view('/pages/blog', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-30 05:52:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-30 05:52:12 --> number_format(): Argument #1 ($num) must be of type float, string given
+in APPPATH\Views\pages\blog.php on line 126.
+ 1 APPPATH\Views\pages\blog.php(126): number_format('50.00000%', 2)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(90): view('/pages/blog', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-30 05:52:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 05:56:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 05:57:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 06:00:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 06:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 06:04:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 06:04:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 06:06:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 06:07:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 06:08:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 06:14:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 06:15:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 06:15:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 06:16:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 06:16:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 06:17:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 06:17:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 06:17:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 06:18:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 06:19:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 06:20:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 06:20:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 06:20:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 06:21:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 06:21:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 06:22:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 06:23:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 06:24:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 06:25:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 06:25:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 06:26:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 06:27:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 06:28:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 06:28:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 06:29:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 06:30:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 06:30:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 06:31:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 06:34:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 06:57:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:01:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:02:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:02:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:03:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:03:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:04:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:06:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:07:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:07:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:13:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:14:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:15:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:23:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:24:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:26:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:26:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:27:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:28:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:29:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:30:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:32:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:33:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:49:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:50:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:51:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:51:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:51:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:52:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:53:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:54:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:55:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:56:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:56:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:57:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 08:00:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 08:00:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 08:01:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 08:01:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 08:11:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 08:13:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 08:13:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 08:24:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 08:25:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 08:27:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 08:30:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 08:33:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 08:33:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 08:47:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 08:47:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 08:51:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 08:53:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

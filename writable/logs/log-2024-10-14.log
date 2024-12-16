@@ -1,0 +1,328 @@
+INFO - 2024-10-14 02:06:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 02:13:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-14 02:13:32 --> require(app/Libraries/fpdf/fpdf.php): Failed to open stream: No such file or directory
+in APPPATH\Views\SurveyPage\generate_pdf.php on line 2.
+ 1 APPPATH\Views\SurveyPage\generate_pdf.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(app/Libraries/fpdf/fpdf.php): Failed to open stream: No such file or directory', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\generate_pdf.php', 2)
+ 2 APPPATH\Views\SurveyPage\generate_pdf.php(2): require()
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\generate_pdf.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('SurveyPage/generate_pdf', [], true)
+ 6 APPPATH\Controllers\Survey.php(54): view('SurveyPage/generate_pdf')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->pdfreport()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-14 02:13:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-14 02:24:40 --> require(app/Libraries/fpdf/fpdf.php): Failed to open stream: No such file or directory
+in APPPATH\Views\SurveyPage\generate_pdf.php on line 2.
+ 1 APPPATH\Views\SurveyPage\generate_pdf.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(app/Libraries/fpdf/fpdf.php): Failed to open stream: No such file or directory', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\generate_pdf.php', 2)
+ 2 APPPATH\Views\SurveyPage\generate_pdf.php(2): require()
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\generate_pdf.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('SurveyPage/generate_pdf', [], true)
+ 6 APPPATH\Controllers\Survey.php(54): view('SurveyPage/generate_pdf')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->pdfreport()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-14 02:26:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 02:35:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 02:35:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 03:27:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 03:27:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 03:27:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-14 03:35:08 --> syntax error, unexpected token "else", expecting end of file
+in APPPATH\Views\SurveyPage\survey_results.php on line 9.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/SurveyPage/survey_results', [], true)
+ 3 APPPATH\Controllers\Survey.php(50): view('/SurveyPage/survey_results', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->results()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-14 03:44:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 03:44:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 03:44:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 03:44:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 04:00:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 04:16:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-14 04:16:57 --> Undefined variable $surveyCount
+in APPPATH\Views\pages\blog.php on line 35.
+ 1 APPPATH\Views\pages\blog.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $surveyCount', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('/pages/blog')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-14 04:19:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-14 04:19:26 --> Undefined variable $surveyCount
+in APPPATH\Views\pages\blog.php on line 35.
+ 1 APPPATH\Views\pages\blog.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $surveyCount', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('/pages/blog')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-14 05:20:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-14 05:20:31 --> Undefined variable $surveyCount
+in APPPATH\Views\pages\blog.php on line 35.
+ 1 APPPATH\Views\pages\blog.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $surveyCount', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('/pages/blog')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-14 05:20:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-14 05:20:32 --> Undefined variable $surveyCount
+in APPPATH\Views\pages\blog.php on line 35.
+ 1 APPPATH\Views\pages\blog.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $surveyCount', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('/pages/blog')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-14 05:20:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-14 05:20:35 --> Undefined variable $surveyCount
+in APPPATH\Views\pages\blog.php on line 35.
+ 1 APPPATH\Views\pages\blog.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $surveyCount', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('/pages/blog')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-14 05:20:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-14 05:20:38 --> Undefined variable $surveyCount
+in APPPATH\Views\pages\blog.php on line 35.
+ 1 APPPATH\Views\pages\blog.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $surveyCount', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('/pages/blog')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-14 05:23:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-14 05:23:55 --> Undefined variable $surveyCount
+in APPPATH\Views\pages\blog.php on line 35.
+ 1 APPPATH\Views\pages\blog.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $surveyCount', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('/pages/blog')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-14 05:25:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-14 05:25:22 --> Undefined variable $surveyCount
+in APPPATH\Views\pages\blog.php on line 35.
+ 1 APPPATH\Views\pages\blog.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $surveyCount', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('/pages/blog')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-14 05:26:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 05:26:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-14 05:26:47 --> Undefined variable $surveyCount
+in APPPATH\Views\pages\blog.php on line 35.
+ 1 APPPATH\Views\pages\blog.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $surveyCount', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('/pages/blog')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-14 05:28:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 05:29:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 05:29:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 05:29:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 05:29:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-14 05:29:40 --> Undefined variable $surveyCount
+in APPPATH\Views\pages\blog.php on line 35.
+ 1 APPPATH\Views\pages\blog.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $surveyCount', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('/pages/blog')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-14 05:30:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-14 05:30:40 --> Undefined variable $surveyCount
+in APPPATH\Views\pages\blog.php on line 35.
+ 1 APPPATH\Views\pages\blog.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $surveyCount', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('/pages/blog')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-14 05:30:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 05:31:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-14 05:31:24 --> Undefined variable $surveyCount
+in APPPATH\Views\pages\blog.php on line 35.
+ 1 APPPATH\Views\pages\blog.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $surveyCount', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('/pages/blog')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-14 05:35:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 05:35:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 05:35:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-14 05:47:18 --> Call to undefined method App\Models\SurveyModel::countItemsThisMonth
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Home.php(11): CodeIgniter\Model->__call('countItemsThisMonth', [])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-14 05:47:19 --> Call to undefined method App\Models\SurveyModel::countItemsThisMonth
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Home.php(11): CodeIgniter\Model->__call('countItemsThisMonth', [])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-14 05:47:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-14 05:47:43 --> Undefined variable $surveyCount
+in APPPATH\Views\pages\blog.php on line 35.
+ 1 APPPATH\Views\pages\blog.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $surveyCount', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('/pages/blog', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-14 05:49:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 05:49:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-14 05:54:32 --> Call to undefined method App\Models\SurveyModel::countItemsThisWeek
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Home.php(14): CodeIgniter\Model->__call('countItemsThisWeek', [])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-14 05:55:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 05:56:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 05:56:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 05:57:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 05:57:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 05:57:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 05:57:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 05:58:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 05:59:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 06:00:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 06:00:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 06:00:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 06:01:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 06:01:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 06:01:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 06:01:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 06:02:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 06:03:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 06:03:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 06:06:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 06:13:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 06:13:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 06:17:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 06:25:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 06:31:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 06:33:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 06:39:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 06:55:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 06:57:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 06:57:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 06:57:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 06:57:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 06:58:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 06:58:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 07:10:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 07:27:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 07:27:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 07:30:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 07:33:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 07:38:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 07:39:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 07:51:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 08:11:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 08:11:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 08:11:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 08:23:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 08:26:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 08:43:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 08:43:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 08:43:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 08:43:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-14 08:44:01 --> require(app/Libraries/fpdf/fpdf.php): Failed to open stream: No such file or directory
+in APPPATH\Views\SurveyPage\generate_pdf.php on line 2.
+ 1 APPPATH\Views\SurveyPage\generate_pdf.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(app/Libraries/fpdf/fpdf.php): Failed to open stream: No such file or directory', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\generate_pdf.php', 2)
+ 2 APPPATH\Views\SurveyPage\generate_pdf.php(2): require()
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\generate_pdf.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('SurveyPage/generate_pdf', [], true)
+ 6 APPPATH\Controllers\Survey.php(54): view('SurveyPage/generate_pdf')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->pdfreport()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-14 08:44:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 08:48:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 08:48:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 08:49:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 08:50:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 08:54:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 08:54:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 08:54:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 08:55:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-14 08:55:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

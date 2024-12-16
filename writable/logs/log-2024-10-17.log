@@ -1,0 +1,1117 @@
+INFO - 2024-10-17 00:14:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:15:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:18:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:20:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:20:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:20:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:20:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:21:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:21:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:22:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:26:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:26:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:26:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:27:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:27:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:29:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-10-17 00:30:55 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cssdbase', 3306, '', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\app\Models\SurveyModel.php(35): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\Users\user 1\Desktop\Starter\app\Controllers\Home.php(13): App\Models\SurveyModel->countSurveyThisMonth()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\Users\user 1\Desktop\Starter\app\Models\SurveyModel.php(35): CodeIgniter\Database\BaseBuilder->countAllResults()
+#4 C:\Users\user 1\Desktop\Starter\app\Controllers\Home.php(13): App\Models\SurveyModel->countSurveyThisMonth()
+#5 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#10 {main}
+CRITICAL - 2024-10-17 00:30:55 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `survey_responses`
+WHERE MONTH(created_at) = :MONTH(created_at):
+AND YEAR(created_at) = :YEAR(created_at):', [...], false)
+ 3 APPPATH\Models\SurveyModel.php(35): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 4 APPPATH\Controllers\Home.php(13): App\Models\SurveyModel->countSurveyThisMonth()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+ERROR - 2024-10-17 00:30:59 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cssdbase', 3306, '', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\app\Models\SurveyModel.php(35): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\Users\user 1\Desktop\Starter\app\Controllers\Home.php(13): App\Models\SurveyModel->countSurveyThisMonth()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\Users\user 1\Desktop\Starter\app\Models\SurveyModel.php(35): CodeIgniter\Database\BaseBuilder->countAllResults()
+#4 C:\Users\user 1\Desktop\Starter\app\Controllers\Home.php(13): App\Models\SurveyModel->countSurveyThisMonth()
+#5 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#10 {main}
+CRITICAL - 2024-10-17 00:30:59 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `survey_responses`
+WHERE MONTH(created_at) = :MONTH(created_at):
+AND YEAR(created_at) = :YEAR(created_at):', [...], false)
+ 3 APPPATH\Models\SurveyModel.php(35): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 4 APPPATH\Controllers\Home.php(13): App\Models\SurveyModel->countSurveyThisMonth()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+ERROR - 2024-10-17 00:31:47 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cssdbase', 3306, '', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\app\Models\SurveyModel.php(35): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\Users\user 1\Desktop\Starter\app\Controllers\Home.php(13): App\Models\SurveyModel->countSurveyThisMonth()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\Users\user 1\Desktop\Starter\app\Models\SurveyModel.php(35): CodeIgniter\Database\BaseBuilder->countAllResults()
+#4 C:\Users\user 1\Desktop\Starter\app\Controllers\Home.php(13): App\Models\SurveyModel->countSurveyThisMonth()
+#5 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#10 {main}
+CRITICAL - 2024-10-17 00:31:47 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `survey_responses`
+WHERE MONTH(created_at) = :MONTH(created_at):
+AND YEAR(created_at) = :YEAR(created_at):', [...], false)
+ 3 APPPATH\Models\SurveyModel.php(35): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 4 APPPATH\Controllers\Home.php(13): App\Models\SurveyModel->countSurveyThisMonth()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+ERROR - 2024-10-17 00:32:48 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cssdbase', 3306, '', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\app\Models\SurveyModel.php(35): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\Users\user 1\Desktop\Starter\app\Controllers\Home.php(13): App\Models\SurveyModel->countSurveyThisMonth()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\Users\user 1\Desktop\Starter\app\Models\SurveyModel.php(35): CodeIgniter\Database\BaseBuilder->countAllResults()
+#4 C:\Users\user 1\Desktop\Starter\app\Controllers\Home.php(13): App\Models\SurveyModel->countSurveyThisMonth()
+#5 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#10 {main}
+CRITICAL - 2024-10-17 00:32:48 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `survey_responses`
+WHERE MONTH(created_at) = :MONTH(created_at):
+AND YEAR(created_at) = :YEAR(created_at):', [...], false)
+ 3 APPPATH\Models\SurveyModel.php(35): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 4 APPPATH\Controllers\Home.php(13): App\Models\SurveyModel->countSurveyThisMonth()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+ERROR - 2024-10-17 00:33:04 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cssdbase', 3306, '', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\app\Models\SurveyModel.php(35): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\Users\user 1\Desktop\Starter\app\Controllers\Home.php(13): App\Models\SurveyModel->countSurveyThisMonth()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\Users\user 1\Desktop\Starter\app\Models\SurveyModel.php(35): CodeIgniter\Database\BaseBuilder->countAllResults()
+#4 C:\Users\user 1\Desktop\Starter\app\Controllers\Home.php(13): App\Models\SurveyModel->countSurveyThisMonth()
+#5 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#10 {main}
+CRITICAL - 2024-10-17 00:33:04 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `survey_responses`
+WHERE MONTH(created_at) = :MONTH(created_at):
+AND YEAR(created_at) = :YEAR(created_at):', [...], false)
+ 3 APPPATH\Models\SurveyModel.php(35): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 4 APPPATH\Controllers\Home.php(13): App\Models\SurveyModel->countSurveyThisMonth()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+ERROR - 2024-10-17 00:33:15 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cssdbase', 3306, '', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\app\Models\SurveyModel.php(35): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\Users\user 1\Desktop\Starter\app\Controllers\Home.php(13): App\Models\SurveyModel->countSurveyThisMonth()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\Users\user 1\Desktop\Starter\app\Models\SurveyModel.php(35): CodeIgniter\Database\BaseBuilder->countAllResults()
+#4 C:\Users\user 1\Desktop\Starter\app\Controllers\Home.php(13): App\Models\SurveyModel->countSurveyThisMonth()
+#5 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#10 {main}
+CRITICAL - 2024-10-17 00:33:15 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `survey_responses`
+WHERE MONTH(created_at) = :MONTH(created_at):
+AND YEAR(created_at) = :YEAR(created_at):', [...], false)
+ 3 APPPATH\Models\SurveyModel.php(35): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 4 APPPATH\Controllers\Home.php(13): App\Models\SurveyModel->countSurveyThisMonth()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+ERROR - 2024-10-17 00:33:40 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cssdbase', 3306, '', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\app\Models\SurveyModel.php(35): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\Users\user 1\Desktop\Starter\app\Controllers\Home.php(13): App\Models\SurveyModel->countSurveyThisMonth()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\Users\user 1\Desktop\Starter\app\Models\SurveyModel.php(35): CodeIgniter\Database\BaseBuilder->countAllResults()
+#4 C:\Users\user 1\Desktop\Starter\app\Controllers\Home.php(13): App\Models\SurveyModel->countSurveyThisMonth()
+#5 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#10 {main}
+CRITICAL - 2024-10-17 00:33:40 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `survey_responses`
+WHERE MONTH(created_at) = :MONTH(created_at):
+AND YEAR(created_at) = :YEAR(created_at):', [...], false)
+ 3 APPPATH\Models\SurveyModel.php(35): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 4 APPPATH\Controllers\Home.php(13): App\Models\SurveyModel->countSurveyThisMonth()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+ERROR - 2024-10-17 00:33:44 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cssdbase', 3306, '', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\app\Models\SurveyModel.php(35): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\Users\user 1\Desktop\Starter\app\Controllers\Home.php(13): App\Models\SurveyModel->countSurveyThisMonth()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\Users\user 1\Desktop\Starter\app\Models\SurveyModel.php(35): CodeIgniter\Database\BaseBuilder->countAllResults()
+#4 C:\Users\user 1\Desktop\Starter\app\Controllers\Home.php(13): App\Models\SurveyModel->countSurveyThisMonth()
+#5 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#10 {main}
+CRITICAL - 2024-10-17 00:33:44 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `survey_responses`
+WHERE MONTH(created_at) = :MONTH(created_at):
+AND YEAR(created_at) = :YEAR(created_at):', [...], false)
+ 3 APPPATH\Models\SurveyModel.php(35): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 4 APPPATH\Controllers\Home.php(13): App\Models\SurveyModel->countSurveyThisMonth()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+ERROR - 2024-10-17 00:33:49 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cssdbase', 3306, '', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\app\Models\SurveyModel.php(35): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\Users\user 1\Desktop\Starter\app\Controllers\Home.php(13): App\Models\SurveyModel->countSurveyThisMonth()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\Users\user 1\Desktop\Starter\app\Models\SurveyModel.php(35): CodeIgniter\Database\BaseBuilder->countAllResults()
+#4 C:\Users\user 1\Desktop\Starter\app\Controllers\Home.php(13): App\Models\SurveyModel->countSurveyThisMonth()
+#5 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#10 {main}
+CRITICAL - 2024-10-17 00:33:49 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `survey_responses`
+WHERE MONTH(created_at) = :MONTH(created_at):
+AND YEAR(created_at) = :YEAR(created_at):', [...], false)
+ 3 APPPATH\Models\SurveyModel.php(35): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 4 APPPATH\Controllers\Home.php(13): App\Models\SurveyModel->countSurveyThisMonth()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+ERROR - 2024-10-17 00:33:53 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cssdbase', 3306, '', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\app\Models\SurveyModel.php(35): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\Users\user 1\Desktop\Starter\app\Controllers\Home.php(13): App\Models\SurveyModel->countSurveyThisMonth()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\Users\user 1\Desktop\Starter\app\Models\SurveyModel.php(35): CodeIgniter\Database\BaseBuilder->countAllResults()
+#4 C:\Users\user 1\Desktop\Starter\app\Controllers\Home.php(13): App\Models\SurveyModel->countSurveyThisMonth()
+#5 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#10 {main}
+CRITICAL - 2024-10-17 00:33:53 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `survey_responses`
+WHERE MONTH(created_at) = :MONTH(created_at):
+AND YEAR(created_at) = :YEAR(created_at):', [...], false)
+ 3 APPPATH\Models\SurveyModel.php(35): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 4 APPPATH\Controllers\Home.php(13): App\Models\SurveyModel->countSurveyThisMonth()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+ERROR - 2024-10-17 00:34:33 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cssdbase', 3306, '', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\app\Models\SurveyModel.php(35): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\Users\user 1\Desktop\Starter\app\Controllers\Home.php(13): App\Models\SurveyModel->countSurveyThisMonth()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\Users\user 1\Desktop\Starter\app\Models\SurveyModel.php(35): CodeIgniter\Database\BaseBuilder->countAllResults()
+#4 C:\Users\user 1\Desktop\Starter\app\Controllers\Home.php(13): App\Models\SurveyModel->countSurveyThisMonth()
+#5 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#10 {main}
+CRITICAL - 2024-10-17 00:34:33 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `survey_responses`
+WHERE MONTH(created_at) = :MONTH(created_at):
+AND YEAR(created_at) = :YEAR(created_at):', [...], false)
+ 3 APPPATH\Models\SurveyModel.php(35): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 4 APPPATH\Controllers\Home.php(13): App\Models\SurveyModel->countSurveyThisMonth()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+ERROR - 2024-10-17 00:34:37 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cssdbase', 3306, '', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\app\Models\SurveyModel.php(35): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\Users\user 1\Desktop\Starter\app\Controllers\Home.php(13): App\Models\SurveyModel->countSurveyThisMonth()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\Users\user 1\Desktop\Starter\app\Models\SurveyModel.php(35): CodeIgniter\Database\BaseBuilder->countAllResults()
+#4 C:\Users\user 1\Desktop\Starter\app\Controllers\Home.php(13): App\Models\SurveyModel->countSurveyThisMonth()
+#5 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#10 {main}
+CRITICAL - 2024-10-17 00:34:37 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `survey_responses`
+WHERE MONTH(created_at) = :MONTH(created_at):
+AND YEAR(created_at) = :YEAR(created_at):', [...], false)
+ 3 APPPATH\Models\SurveyModel.php(35): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 4 APPPATH\Controllers\Home.php(13): App\Models\SurveyModel->countSurveyThisMonth()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-17 00:34:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:34:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:39:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:39:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:39:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:39:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:40:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:41:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:42:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:44:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:44:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:44:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:44:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:44:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:44:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:45:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:45:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:45:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:45:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:45:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:45:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:46:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:46:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:46:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:49:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:49:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:49:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:52:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:52:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:52:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:52:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:52:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:52:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:52:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:54:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:55:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:55:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:56:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:57:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:57:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:57:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:57:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:59:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 00:59:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 01:00:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 01:00:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 01:05:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 01:07:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 01:07:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 01:07:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 01:07:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 01:08:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 01:08:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 01:08:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 01:09:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 01:09:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 01:09:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 01:10:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 01:11:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 01:11:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 01:11:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 01:11:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 01:11:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 01:11:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 01:11:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 01:12:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 01:12:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 01:14:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 01:14:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 01:14:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 01:15:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 01:15:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 01:15:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 01:16:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 01:16:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 01:17:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 01:17:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 01:17:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 01:18:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 01:27:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 01:27:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 01:27:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 01:27:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 01:28:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 01:30:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 01:33:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 01:33:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 01:36:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 01:59:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-17 01:59:24 --> Undefined variable $count
+in APPPATH\Views\pages\blog.php on line 42.
+ 1 APPPATH\Views\pages\blog.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $count', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 42)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(27): view('/pages/blog', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-17 01:59:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-17 01:59:29 --> Undefined variable $count
+in APPPATH\Views\pages\blog.php on line 42.
+ 1 APPPATH\Views\pages\blog.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $count', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 42)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(27): view('/pages/blog', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-17 01:59:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-17 01:59:35 --> Undefined variable $count
+in APPPATH\Views\pages\blog.php on line 42.
+ 1 APPPATH\Views\pages\blog.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $count', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 42)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(27): view('/pages/blog', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-17 02:00:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:00:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:03:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:10:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:11:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:11:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:11:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:11:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:15:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:15:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:15:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:15:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:15:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:15:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:15:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:16:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:16:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:16:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:16:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:16:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:16:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:16:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:16:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:17:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:17:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:17:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:17:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:17:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:17:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:17:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:17:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:17:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:17:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:17:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:17:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:17:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:18:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:18:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:18:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:22:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:23:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:25:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:29:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:32:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:33:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:33:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:33:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:34:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:34:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:34:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:34:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:35:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:37:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:38:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:40:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:41:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:41:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:41:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:42:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:43:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:44:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:44:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:44:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:44:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:46:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:46:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:46:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:47:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:47:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:47:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:49:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:49:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:56:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:56:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 02:58:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-17 03:04:00 --> Undefined variable $data
+in APPPATH\Controllers\TestController.php on line 11.
+ 1 APPPATH\Controllers\TestController.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Controllers\\TestController.php', 11)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-17 03:16:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-17 03:26:37 --> Undefined variable $results
+in APPPATH\Views\test.php on line 52.
+ 1 APPPATH\Views\test.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $results', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\test.php', 52)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\test.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/test', [], true)
+ 5 APPPATH\Controllers\TestController.php(11): view('/test')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-17 03:26:47 --> Undefined variable $results
+in APPPATH\Views\test.php on line 52.
+ 1 APPPATH\Views\test.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $results', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\test.php', 52)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\test.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/test', [], true)
+ 5 APPPATH\Controllers\TestController.php(11): view('/test')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-17 03:26:47 --> Undefined variable $results
+in APPPATH\Views\test.php on line 52.
+ 1 APPPATH\Views\test.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $results', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\test.php', 52)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\test.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/test', [], true)
+ 5 APPPATH\Controllers\TestController.php(11): view('/test')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-17 03:26:47 --> Undefined variable $results
+in APPPATH\Views\test.php on line 52.
+ 1 APPPATH\Views\test.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $results', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\test.php', 52)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\test.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/test', [], true)
+ 5 APPPATH\Controllers\TestController.php(11): view('/test')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TestController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-17 03:29:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 03:39:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-17 03:46:41 --> Undefined variable $departments
+in APPPATH\Views\SurveyPage\survey_form.php on line 108.
+ 1 APPPATH\Views\SurveyPage\survey_form.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departments', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\survey_form.php', 108)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\survey_form.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/SurveyPage/survey_form', [], true)
+ 5 APPPATH\Controllers\Survey.php(15): view('/SurveyPage/survey_form')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-17 03:51:58 --> Undefined variable $departments
+in APPPATH\Views\SurveyPage\survey_form.php on line 108.
+ 1 APPPATH\Views\SurveyPage\survey_form.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departments', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\survey_form.php', 108)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\survey_form.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/SurveyPage/survey_form', [], true)
+ 5 APPPATH\Controllers\Survey.php(15): view('/SurveyPage/survey_form')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-17 03:52:00 --> Undefined variable $departments
+in APPPATH\Views\SurveyPage\survey_form.php on line 108.
+ 1 APPPATH\Views\SurveyPage\survey_form.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departments', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\survey_form.php', 108)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\survey_form.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/SurveyPage/survey_form', [], true)
+ 5 APPPATH\Controllers\Survey.php(15): view('/SurveyPage/survey_form')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-17 03:54:34 --> Undefined variable $departments
+in APPPATH\Views\SurveyPage\survey_form.php on line 108.
+ 1 APPPATH\Views\SurveyPage\survey_form.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departments', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\survey_form.php', 108)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\survey_form.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/SurveyPage/survey_form', [], true)
+ 5 APPPATH\Controllers\Survey.php(15): view('/SurveyPage/survey_form')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-17 03:54:36 --> Undefined variable $departments
+in APPPATH\Views\SurveyPage\survey_form.php on line 108.
+ 1 APPPATH\Views\SurveyPage\survey_form.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departments', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\survey_form.php', 108)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\survey_form.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/SurveyPage/survey_form', [], true)
+ 5 APPPATH\Controllers\Survey.php(15): view('/SurveyPage/survey_form')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-17 03:57:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 04:00:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 04:00:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 05:17:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 05:30:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 05:31:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 05:36:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 05:37:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 05:39:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 05:41:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 05:41:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 06:36:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-10-17 06:39:37 --> mysqli_sql_exception: Column 'username' cannot be null in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\user 1\Desktop\Starter\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\user 1\Desktop\Starter\app\Controllers\UserController.php(49): CodeIgniter\Model->insert(Array)
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\UserController->storeUser()
+#9 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#10 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#13 {main}
+CRITICAL - 2024-10-17 06:39:37 --> Column 'username' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tbl_user` (`username`, `first_name`, `last_name`, `password`, `email`, `profession`, `location`, `website`, `phone`, `roletype`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_user` (`username`, `first_name`, `last_name`, `password`, `email`, `profession`, `location`, `website`, `phone`, `roletype`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_user` (`username`, `first_name`, `last_name`, `password`, `email`, `profession`, `location`, `website`, `phone`, `roletype`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_user` (`username`, `first_name`, `last_name`, `password`, `email`, `profession`, `location`, `website`, `phone`, `roletype`) VALUES (:username:, :first_name:, :last_name:, :password:, :email:, :profession:, :location:, :website:, :phone:, :roletype:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\UserController.php(49): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\UserController->storeUser()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+ERROR - 2024-10-17 06:41:20 --> mysqli_sql_exception: Column 'username' cannot be null in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\user 1\Desktop\Starter\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\user 1\Desktop\Starter\app\Controllers\UserController.php(49): CodeIgniter\Model->insert(Array)
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\UserController->storeUser()
+#9 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#10 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#13 {main}
+CRITICAL - 2024-10-17 06:41:20 --> Column 'username' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tbl_user` (`username`, `first_name`, `last_name`, `password`, `email`, `profession`, `location`, `website`, `phone`, `roletype`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_user` (`username`, `first_name`, `last_name`, `password`, `email`, `profession`, `location`, `website`, `phone`, `roletype`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_user` (`username`, `first_name`, `last_name`, `password`, `email`, `profession`, `location`, `website`, `phone`, `roletype`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_user` (`username`, `first_name`, `last_name`, `password`, `email`, `profession`, `location`, `website`, `phone`, `roletype`) VALUES (:username:, :first_name:, :last_name:, :password:, :email:, :profession:, :location:, :website:, :phone:, :roletype:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\UserController.php(49): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\UserController->storeUser()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+ERROR - 2024-10-17 06:45:17 --> mysqli_sql_exception: Column 'username' cannot be null in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\user 1\Desktop\Starter\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\user 1\Desktop\Starter\app\Controllers\UserController.php(49): CodeIgniter\Model->insert(Array)
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\UserController->storeUser()
+#9 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#10 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#13 {main}
+CRITICAL - 2024-10-17 06:45:17 --> Column 'username' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tbl_user` (`username`, `first_name`, `last_name`, `password`, `email`, `profession`, `location`, `website`, `phone`, `roletype`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_user` (`username`, `first_name`, `last_name`, `password`, `email`, `profession`, `location`, `website`, `phone`, `roletype`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_user` (`username`, `first_name`, `last_name`, `password`, `email`, `profession`, `location`, `website`, `phone`, `roletype`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_user` (`username`, `first_name`, `last_name`, `password`, `email`, `profession`, `location`, `website`, `phone`, `roletype`) VALUES (:username:, :first_name:, :last_name:, :password:, :email:, :profession:, :location:, :website:, :phone:, :roletype:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\UserController.php(49): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\UserController->storeUser()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-17 06:50:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 06:50:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 06:54:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 07:00:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 07:19:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 07:37:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 07:37:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 07:40:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 07:43:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 07:43:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 07:43:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 07:44:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 07:49:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 08:00:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-17 08:00:59 --> Undefined variable $departments
+in APPPATH\Views\Layouts\main.php on line 123.
+ 1 APPPATH\Views\Layouts\main.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departments', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\Layouts\\main.php', 123)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\Layouts\\main.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/main', [], true)
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 6 APPPATH\Controllers\Home.php(24): view('/pages/blog', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-17 08:03:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 08:06:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-17 08:06:53 --> Undefined variable $departments
+in APPPATH\Views\Layouts\SurveyPrompt.php on line 25.
+ 1 APPPATH\Views\Layouts\SurveyPrompt.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departments', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\Layouts\\SurveyPrompt.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\Layouts\\SurveyPrompt.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Layouts/SurveyPrompt', [], true)
+ 5 APPPATH\Controllers\Survey.php(45): view('Layouts/SurveyPrompt')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->openSurveyPrompt()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-17 08:08:34 --> Undefined variable $departments
+in APPPATH\Views\Layouts\SurveyPrompt.php on line 25.
+ 1 APPPATH\Views\Layouts\SurveyPrompt.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departments', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\Layouts\\SurveyPrompt.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\Layouts\\SurveyPrompt.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Layouts/SurveyPrompt', [], true)
+ 5 APPPATH\Controllers\DepartmentController.php(19): view('Layouts/SurveyPrompt')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DepartmentController->openSurveyPrompt()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DepartmentController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-17 08:08:37 --> Undefined variable $departments
+in APPPATH\Views\Layouts\SurveyPrompt.php on line 25.
+ 1 APPPATH\Views\Layouts\SurveyPrompt.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departments', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\Layouts\\SurveyPrompt.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\Layouts\\SurveyPrompt.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Layouts/SurveyPrompt', [], true)
+ 5 APPPATH\Controllers\DepartmentController.php(19): view('Layouts/SurveyPrompt')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DepartmentController->openSurveyPrompt()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DepartmentController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-17 08:10:30 --> Undefined variable $departments
+in APPPATH\Views\Layouts\SurveyPrompt.php on line 25.
+ 1 APPPATH\Views\Layouts\SurveyPrompt.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departments', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\Layouts\\SurveyPrompt.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\Layouts\\SurveyPrompt.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Layouts/SurveyPrompt', [], true)
+ 5 APPPATH\Controllers\DepartmentController.php(19): view('Layouts/SurveyPrompt')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DepartmentController->openSurveyPrompt()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DepartmentController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-17 08:12:09 --> Undefined variable $departments
+in APPPATH\Views\Layouts\SurveyPrompt.php on line 105.
+ 1 APPPATH\Views\Layouts\SurveyPrompt.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departments', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\Layouts\\SurveyPrompt.php', 105)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\Layouts\\SurveyPrompt.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Layouts/SurveyPrompt', [], true)
+ 5 APPPATH\Controllers\DepartmentController.php(19): view('Layouts/SurveyPrompt')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DepartmentController->openSurveyPrompt()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DepartmentController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-17 08:15:02 --> Undefined variable $departments
+in APPPATH\Views\Layouts\SurveyPrompt.php on line 105.
+ 1 APPPATH\Views\Layouts\SurveyPrompt.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departments', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\Layouts\\SurveyPrompt.php', 105)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\Layouts\\SurveyPrompt.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Layouts/SurveyPrompt', [], true)
+ 5 APPPATH\Controllers\DepartmentController.php(19): view('Layouts/SurveyPrompt')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DepartmentController->openSurveyPrompt()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DepartmentController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-17 08:15:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-17 08:15:08 --> Undefined variable $departments
+in APPPATH\Views\Layouts\SurveyPrompt.php on line 105.
+ 1 APPPATH\Views\Layouts\SurveyPrompt.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departments', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\Layouts\\SurveyPrompt.php', 105)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\Layouts\\SurveyPrompt.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Layouts/SurveyPrompt', [], true)
+ 5 APPPATH\Controllers\DepartmentController.php(19): view('Layouts/SurveyPrompt')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DepartmentController->openSurveyPrompt()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DepartmentController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-17 08:15:50 --> Undefined variable $departments
+in APPPATH\Views\Layouts\SurveyPrompt.php on line 105.
+ 1 APPPATH\Views\Layouts\SurveyPrompt.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departments', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\Layouts\\SurveyPrompt.php', 105)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\Layouts\\SurveyPrompt.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/Layouts/SurveyPrompt', [], true)
+ 5 APPPATH\Controllers\DepartmentController.php(19): view('/Layouts/SurveyPrompt')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DepartmentController->openSurveyPrompt()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DepartmentController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-17 08:16:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-17 08:20:12 --> Undefined variable $departments
+in APPPATH\Views\Layouts\SurveyPrompt.php on line 105.
+ 1 APPPATH\Views\Layouts\SurveyPrompt.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departments', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\Layouts\\SurveyPrompt.php', 105)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\Layouts\\SurveyPrompt.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Layouts/SurveyPrompt', [], true)
+ 5 APPPATH\Controllers\DepartmentController.php(21): view('Layouts/SurveyPrompt')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DepartmentController->openSurveyPrompt()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DepartmentController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-17 08:20:14 --> Undefined variable $departments
+in APPPATH\Views\Layouts\SurveyPrompt.php on line 105.
+ 1 APPPATH\Views\Layouts\SurveyPrompt.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departments', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\Layouts\\SurveyPrompt.php', 105)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\Layouts\\SurveyPrompt.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Layouts/SurveyPrompt', [], true)
+ 5 APPPATH\Controllers\DepartmentController.php(21): view('Layouts/SurveyPrompt')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DepartmentController->openSurveyPrompt()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DepartmentController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-17 08:21:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 08:38:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 08:40:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 08:40:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 08:55:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 08:55:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-17 08:55:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -1,0 +1,185 @@
+INFO - 2024-12-03 01:08:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 01:08:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 01:20:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 01:20:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 01:20:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-03 01:20:36 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Models\QuestionModel.php on line 96.
+ 1 APPPATH\Models\QuestionModel.php(96): strtotime(null)
+ 2 APPPATH\Controllers\Home.php(53): App\Models\QuestionModel->getMonthlyCounted()
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+WARNING - 2024-12-03 01:20:36 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Models\QuestionModel.php on line 97.
+ 1 APPPATH\Models\QuestionModel.php(97): strtotime(null)
+ 2 APPPATH\Controllers\Home.php(53): App\Models\QuestionModel->getMonthlyCounted()
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-12-03 01:20:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 01:20:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 01:21:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 01:21:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 01:21:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 01:21:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 01:21:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 01:21:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-03 01:49:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 01:49:09 --> Undefined variable $respondentQuestion
+in APPPATH\Views\pages\surveyprofile.php on line 61.
+ 1 APPPATH\Views\pages\surveyprofile.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $respondentQuestion', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyprofile.php', 61)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyprofile.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyprofile', [], true)
+ 5 APPPATH\Controllers\NotificationController.php(22): view('pages/surveyprofile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\NotificationController->viewRespondent('91')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-12-03 01:54:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 01:54:40 --> Undefined variable $respondentQuestion
+in APPPATH\Views\pages\surveyprofile.php on line 61.
+ 1 APPPATH\Views\pages\surveyprofile.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $respondentQuestion', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyprofile.php', 61)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyprofile.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyprofile', [], true)
+ 5 APPPATH\Controllers\NotificationController.php(22): view('pages/surveyprofile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\NotificationController->viewRespondent('91')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-12-03 01:54:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 01:54:57 --> Undefined variable $respondents
+in APPPATH\Views\pages\surveyprofile.php on line 57.
+ 1 APPPATH\Views\pages\surveyprofile.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $respondents', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyprofile.php', 57)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyprofile.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyprofile', [], true)
+ 5 APPPATH\Controllers\NotificationController.php(31): view('pages/surveyprofile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\NotificationController->viewRespondentQuestion('91')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-12-03 01:55:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 01:55:47 --> Undefined array key "response_value"
+in APPPATH\Views\pages\surveyprofile.php on line 61.
+ 1 APPPATH\Views\pages\surveyprofile.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "response_value"', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyprofile.php', 61)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyprofile.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyprofile', [], true)
+ 5 APPPATH\Controllers\NotificationController.php(25): view('pages/surveyprofile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\NotificationController->viewRespondent('91')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-12-03 01:56:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 01:56:28 --> Undefined array key "response_value"
+in APPPATH\Views\pages\surveyprofile.php on line 61.
+ 1 APPPATH\Views\pages\surveyprofile.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "response_value"', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyprofile.php', 61)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyprofile.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyprofile', [], true)
+ 5 APPPATH\Controllers\NotificationController.php(25): view('pages/surveyprofile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\NotificationController->viewRespondent('91')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-12-03 01:56:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 01:56:30 --> Undefined array key "response_value"
+in APPPATH\Views\pages\surveyprofile.php on line 61.
+ 1 APPPATH\Views\pages\surveyprofile.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "response_value"', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyprofile.php', 61)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyprofile.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyprofile', [], true)
+ 5 APPPATH\Controllers\NotificationController.php(25): view('pages/surveyprofile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\NotificationController->viewRespondent('91')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-12-03 01:56:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 01:56:31 --> Undefined array key "response_value"
+in APPPATH\Views\pages\surveyprofile.php on line 61.
+ 1 APPPATH\Views\pages\surveyprofile.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "response_value"', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyprofile.php', 61)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyprofile.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyprofile', [], true)
+ 5 APPPATH\Controllers\NotificationController.php(25): view('pages/surveyprofile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\NotificationController->viewRespondent('91')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-12-03 02:15:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 02:15:51 --> Undefined array key "response_value"
+in APPPATH\Views\pages\surveyprofile.php on line 61.
+ 1 APPPATH\Views\pages\surveyprofile.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "response_value"', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyprofile.php', 61)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyprofile.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyprofile', [], true)
+ 5 APPPATH\Controllers\NotificationController.php(25): view('pages/surveyprofile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\NotificationController->viewRespondent('91')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-12-03 02:15:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 02:15:52 --> Undefined array key "response_value"
+in APPPATH\Views\pages\surveyprofile.php on line 61.
+ 1 APPPATH\Views\pages\surveyprofile.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "response_value"', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyprofile.php', 61)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyprofile.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyprofile', [], true)
+ 5 APPPATH\Controllers\NotificationController.php(25): view('pages/surveyprofile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\NotificationController->viewRespondent('91')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-12-03 02:16:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 02:16:34 --> Undefined array key "response_value"
+in APPPATH\Views\pages\surveyprofile.php on line 61.
+ 1 APPPATH\Views\pages\surveyprofile.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "response_value"', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyprofile.php', 61)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyprofile.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyprofile', [], true)
+ 5 APPPATH\Controllers\NotificationController.php(25): view('pages/surveyprofile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\NotificationController->viewRespondent('91')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-12-03 02:17:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 02:17:40 --> Undefined array key "response_value"
+in APPPATH\Views\pages\surveyprofile.php on line 61.
+ 1 APPPATH\Views\pages\surveyprofile.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "response_value"', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyprofile.php', 61)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyprofile.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyprofile', [], true)
+ 5 APPPATH\Controllers\NotificationController.php(25): view('pages/surveyprofile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\NotificationController->viewRespondent('91')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-12-03 02:17:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 02:17:44 --> Undefined array key "response_value"
+in APPPATH\Views\pages\surveyprofile.php on line 61.
+ 1 APPPATH\Views\pages\surveyprofile.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "response_value"', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyprofile.php', 61)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyprofile.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyprofile', [], true)
+ 5 APPPATH\Controllers\NotificationController.php(25): view('pages/surveyprofile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\NotificationController->viewRespondent('91')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')

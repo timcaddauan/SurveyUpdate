@@ -1,0 +1,861 @@
+ERROR - 2024-10-28 01:11:01 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cssdbase', 3306, '', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\app\Controllers\Survey.php(97): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\Survey->loadQuestions()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\user 1\Desktop\Starter\app\Controllers\Survey.php(97): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\Survey->loadQuestions()
+#5 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#9 {main}
+CRITICAL - 2024-10-28 01:11:01 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `questions_tbl`', [], false)
+ 3 APPPATH\Controllers\Survey.php(97): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->loadQuestions()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+ERROR - 2024-10-28 01:11:05 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cssdbase', 3306, '', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\app\Models\SurveyModel.php(51): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\Users\user 1\Desktop\Starter\app\Controllers\Home.php(15): App\Models\SurveyModel->countSurveyThisMonth()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\Users\user 1\Desktop\Starter\app\Models\SurveyModel.php(51): CodeIgniter\Database\BaseBuilder->countAllResults()
+#4 C:\Users\user 1\Desktop\Starter\app\Controllers\Home.php(15): App\Models\SurveyModel->countSurveyThisMonth()
+#5 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#10 {main}
+CRITICAL - 2024-10-28 01:11:05 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `survey_responses`
+WHERE MONTH(created_at) = :MONTH(created_at):
+AND YEAR(created_at) = :YEAR(created_at):', [...], false)
+ 3 APPPATH\Models\SurveyModel.php(51): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 4 APPPATH\Controllers\Home.php(15): App\Models\SurveyModel->countSurveyThisMonth()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-28 01:44:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-28 01:44:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-28 01:45:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-28 02:14:45 --> Undefined array key "id"
+in APPPATH\Views\SurveyPage\Question.php on line 152.
+ 1 APPPATH\Views\SurveyPage\Question.php(152): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php', 152)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('SurveyPage/Question', [], true)
+ 5 APPPATH\Controllers\Survey.php(102): view('SurveyPage/Question', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->loadQuestions()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-28 02:15:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-28 02:15:37 --> Undefined array key "deapartment_id"
+in APPPATH\Views\SurveyPage\Question.php on line 152.
+ 1 APPPATH\Views\SurveyPage\Question.php(152): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "deapartment_id"', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php', 152)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('SurveyPage/Question', [], true)
+ 5 APPPATH\Controllers\Survey.php(102): view('SurveyPage/Question', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->loadQuestions()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-28 03:16:52 --> Undefined array key "deptname"
+in APPPATH\Views\SurveyPage\Question.php on line 152.
+ 1 APPPATH\Views\SurveyPage\Question.php(152): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "deptname"', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php', 152)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('SurveyPage/Question', [], true)
+ 5 APPPATH\Controllers\Survey.php(102): view('SurveyPage/Question', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->loadQuestions()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-28 03:21:17 --> Undefined array key "deptid"
+in APPPATH\Views\SurveyPage\Question.php on line 152.
+ 1 APPPATH\Views\SurveyPage\Question.php(152): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "deptid"', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php', 152)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('SurveyPage/Question', [], true)
+ 5 APPPATH\Controllers\Survey.php(102): view('SurveyPage/Question', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->loadQuestions()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-28 03:22:43 --> Undefined array key "deptid"
+in APPPATH\Views\SurveyPage\Question.php on line 152.
+ 1 APPPATH\Views\SurveyPage\Question.php(152): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "deptid"', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php', 152)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('SurveyPage/Question', [], true)
+ 5 APPPATH\Controllers\Survey.php(102): view('SurveyPage/Question', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->loadQuestions()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-28 03:23:44 --> Undefined array key "deptid"
+in APPPATH\Views\SurveyPage\Question.php on line 152.
+ 1 APPPATH\Views\SurveyPage\Question.php(152): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "deptid"', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php', 152)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('SurveyPage/Question', [], true)
+ 5 APPPATH\Controllers\Survey.php(102): view('SurveyPage/Question', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->loadQuestions()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-28 03:24:11 --> Undefined array key "deptid"
+in APPPATH\Views\SurveyPage\Question.php on line 152.
+ 1 APPPATH\Views\SurveyPage\Question.php(152): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "deptid"', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php', 152)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('SurveyPage/Question', [], true)
+ 5 APPPATH\Controllers\Survey.php(102): view('SurveyPage/Question', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->loadQuestions()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-28 03:24:13 --> Undefined array key "deptid"
+in APPPATH\Views\SurveyPage\Question.php on line 152.
+ 1 APPPATH\Views\SurveyPage\Question.php(152): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "deptid"', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php', 152)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('SurveyPage/Question', [], true)
+ 5 APPPATH\Controllers\Survey.php(102): view('SurveyPage/Question', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->loadQuestions()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-28 03:24:26 --> Undefined array key "deptid"
+in APPPATH\Views\SurveyPage\Question.php on line 152.
+ 1 APPPATH\Views\SurveyPage\Question.php(152): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "deptid"', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php', 152)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('SurveyPage/Question', [], true)
+ 5 APPPATH\Controllers\Survey.php(102): view('SurveyPage/Question', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->loadQuestions()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-28 03:26:06 --> Undefined array key "deptid"
+in APPPATH\Views\SurveyPage\Question.php on line 152.
+ 1 APPPATH\Views\SurveyPage\Question.php(152): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "deptid"', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php', 152)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('SurveyPage/Question', [], true)
+ 5 APPPATH\Controllers\Survey.php(102): view('SurveyPage/Question', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->loadQuestions()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-28 03:36:49 --> Undefined array key "response"
+in APPPATH\Views\SurveyPage\Question.php on line 152.
+ 1 APPPATH\Views\SurveyPage\Question.php(152): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "response"', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php', 152)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('SurveyPage/Question', [], true)
+ 5 APPPATH\Controllers\Survey.php(102): view('SurveyPage/Question', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->loadQuestions()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-28 03:43:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-28 05:19:29 --> Undefined array key "deptid"
+in APPPATH\Views\SurveyPage\Question.php on line 152.
+ 1 APPPATH\Views\SurveyPage\Question.php(152): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "deptid"', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php', 152)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('SurveyPage/Question', [], true)
+ 5 APPPATH\Controllers\Survey.php(102): view('SurveyPage/Question', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->loadQuestions()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-28 05:19:31 --> Undefined array key "deptid"
+in APPPATH\Views\SurveyPage\Question.php on line 152.
+ 1 APPPATH\Views\SurveyPage\Question.php(152): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "deptid"', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php', 152)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('SurveyPage/Question', [], true)
+ 5 APPPATH\Controllers\Survey.php(102): view('SurveyPage/Question', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->loadQuestions()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-28 05:22:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-28 05:22:50 --> Undefined array key "deptid"
+in APPPATH\Views\SurveyPage\Question.php on line 152.
+ 1 APPPATH\Views\SurveyPage\Question.php(152): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "deptid"', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php', 152)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('SurveyPage/Question', [], true)
+ 5 APPPATH\Controllers\Survey.php(102): view('SurveyPage/Question', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->loadQuestions()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-28 05:26:16 --> Undefined array key "deptid"
+in APPPATH\Views\SurveyPage\Question.php on line 152.
+ 1 APPPATH\Views\SurveyPage\Question.php(152): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "deptid"', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php', 152)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('SurveyPage/Question', [], true)
+ 5 APPPATH\Controllers\Survey.php(102): view('SurveyPage/Question', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->loadQuestions()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-28 05:26:17 --> Undefined array key "deptid"
+in APPPATH\Views\SurveyPage\Question.php on line 152.
+ 1 APPPATH\Views\SurveyPage\Question.php(152): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "deptid"', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php', 152)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('SurveyPage/Question', [], true)
+ 5 APPPATH\Controllers\Survey.php(102): view('SurveyPage/Question', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->loadQuestions()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-28 05:26:19 --> Undefined array key "deptid"
+in APPPATH\Views\SurveyPage\Question.php on line 152.
+ 1 APPPATH\Views\SurveyPage\Question.php(152): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "deptid"', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php', 152)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('SurveyPage/Question', [], true)
+ 5 APPPATH\Controllers\Survey.php(102): view('SurveyPage/Question', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->loadQuestions()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-28 05:26:38 --> Undefined array key "deptid"
+in APPPATH\Views\SurveyPage\Question.php on line 152.
+ 1 APPPATH\Views\SurveyPage\Question.php(152): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "deptid"', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php', 152)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('SurveyPage/Question', [], true)
+ 5 APPPATH\Controllers\Survey.php(102): view('SurveyPage/Question', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->loadQuestions()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-28 05:41:18 --> Undefined array key "id"
+in APPPATH\Views\SurveyPage\Question.php on line 152.
+ 1 APPPATH\Views\SurveyPage\Question.php(152): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php', 152)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('SurveyPage/Question', [], true)
+ 5 APPPATH\Controllers\Survey.php(102): view('SurveyPage/Question', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->loadQuestions()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-28 05:41:42 --> Undefined array key "deptid"
+in APPPATH\Views\SurveyPage\Question.php on line 152.
+ 1 APPPATH\Views\SurveyPage\Question.php(152): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "deptid"', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php', 152)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('SurveyPage/Question', [], true)
+ 5 APPPATH\Controllers\Survey.php(102): view('SurveyPage/Question', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->loadQuestions()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-28 05:42:08 --> Undefined array key "deptid"
+in APPPATH\Views\SurveyPage\Question.php on line 152.
+ 1 APPPATH\Views\SurveyPage\Question.php(152): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "deptid"', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php', 152)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('SurveyPage/Question', [], true)
+ 5 APPPATH\Controllers\Survey.php(102): view('SurveyPage/Question', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->loadQuestions()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-28 05:47:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-28 05:47:29 --> Undefined array key "deptid"
+in APPPATH\Views\SurveyPage\Question.php on line 152.
+ 1 APPPATH\Views\SurveyPage\Question.php(152): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "deptid"', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php', 152)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('SurveyPage/Question', [], true)
+ 5 APPPATH\Controllers\Survey.php(102): view('SurveyPage/Question', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->loadQuestions()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-28 05:47:45 --> Undefined array key "deptid"
+in APPPATH\Views\SurveyPage\Question.php on line 152.
+ 1 APPPATH\Views\SurveyPage\Question.php(152): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "deptid"', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php', 152)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('SurveyPage/Question', [], true)
+ 5 APPPATH\Controllers\Survey.php(102): view('SurveyPage/Question', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->loadQuestions()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-28 06:12:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-28 06:12:37 --> Undefined array key "departmentId"
+in APPPATH\Views\SurveyPage\Question.php on line 152.
+ 1 APPPATH\Views\SurveyPage\Question.php(152): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "departmentId"', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php', 152)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('SurveyPage/Question', [], true)
+ 5 APPPATH\Controllers\Survey.php(102): view('SurveyPage/Question', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->loadQuestions()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-28 06:19:10 --> Undefined array key "departmentId"
+in APPPATH\Views\SurveyPage\Question.php on line 152.
+ 1 APPPATH\Views\SurveyPage\Question.php(152): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "departmentId"', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php', 152)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('SurveyPage/Question', [], true)
+ 5 APPPATH\Controllers\Survey.php(102): view('SurveyPage/Question', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->loadQuestions()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+ERROR - 2024-10-28 06:19:38 --> mysqli_sql_exception: Column 'respondent_name' cannot be null in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\app\Controllers\Survey.php(146): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\Survey->submitResponseDept()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#10 {main}
+CRITICAL - 2024-10-28 06:19:38 --> Column 'respondent_name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `respondent_tbl` (`respondent_name`) VALUES (NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `respondent_tbl` (`respondent_name`) VALUES (NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `respondent_tbl` (`respondent_name`) VALUES (NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `respondent_tbl` (`respondent_name`) VALUES (:respondent_name:)', [...], false)
+ 5 APPPATH\Controllers\Survey.php(146): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->submitResponseDept()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+ERROR - 2024-10-28 06:20:58 --> mysqli_sql_exception: Unknown column 'respondent_id' in 'field list' in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\app\Controllers\Survey.php(159): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\Survey->submitResponseDept()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#10 {main}
+CRITICAL - 2024-10-28 06:20:58 --> Unknown column 'respondent_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `responses` (`question_id`, `response_value`, `respondent_id`, `department_id`) VALUES (\'1\', \'Disagree\', 1, \'IT Department\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `responses` (`question_id`, `response_value`, `respondent_id`, `department_id`) VALUES (\'1\', \'Disagree\', 1, \'IT Department\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `responses` (`question_id`, `response_value`, `respondent_id`, `department_id`) VALUES (\'1\', \'Disagree\', 1, \'IT Department\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `responses` (`question_id`, `response_value`, `respondent_id`, `department_id`) VALUES (:question_id:, :response_value:, :respondent_id:, :department_id:)', [...], false)
+ 5 APPPATH\Controllers\Survey.php(159): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->submitResponseDept()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+ERROR - 2024-10-28 06:27:41 --> mysqli_sql_exception: Unknown column 'respondent_id' in 'field list' in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\app\Controllers\Survey.php(159): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\Survey->submitResponseDept()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#10 {main}
+CRITICAL - 2024-10-28 06:27:41 --> Unknown column 'respondent_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `responses` (`question_id`, `response_value`, `respondent_id`, `department_id`) VALUES (\'1\', \'Disagree\', 2, \'IT Department\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `responses` (`question_id`, `response_value`, `respondent_id`, `department_id`) VALUES (\'1\', \'Disagree\', 2, \'IT Department\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `responses` (`question_id`, `response_value`, `respondent_id`, `department_id`) VALUES (\'1\', \'Disagree\', 2, \'IT Department\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `responses` (`question_id`, `response_value`, `respondent_id`, `department_id`) VALUES (:question_id:, :response_value:, :respondent_id:, :department_id:)', [...], false)
+ 5 APPPATH\Controllers\Survey.php(159): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->submitResponseDept()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+ERROR - 2024-10-28 06:31:58 --> mysqli_sql_exception: Unknown column 'department_id' in 'field list' in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\app\Controllers\Survey.php(159): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\Survey->submitResponseDept()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#10 {main}
+CRITICAL - 2024-10-28 06:31:58 --> Unknown column 'department_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `responses` (`question_id`, `response_value`, `id`, `department_id`) VALUES (\'1\', \'Disagree\', 3, \'IT Department\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `responses` (`question_id`, `response_value`, `id`, `department_id`) VALUES (\'1\', \'Disagree\', 3, \'IT Department\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `responses` (`question_id`, `response_value`, `id`, `department_id`) VALUES (\'1\', \'Disagree\', 3, \'IT Department\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `responses` (`question_id`, `response_value`, `id`, `department_id`) VALUES (:question_id:, :response_value:, :id:, :department_id:)', [...], false)
+ 5 APPPATH\Controllers\Survey.php(159): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->submitResponseDept()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+ERROR - 2024-10-28 06:34:16 --> mysqli_sql_exception: Unknown column 'department_id' in 'field list' in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\app\Controllers\Survey.php(159): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\Survey->submitResponseDept()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#10 {main}
+CRITICAL - 2024-10-28 06:34:16 --> Unknown column 'department_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `responses` (`question_id`, `response_value`, `id`, `department_id`) VALUES (\'1\', \'Disagree\', 4, \'IT Department\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `responses` (`question_id`, `response_value`, `id`, `department_id`) VALUES (\'1\', \'Disagree\', 4, \'IT Department\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `responses` (`question_id`, `response_value`, `id`, `department_id`) VALUES (\'1\', \'Disagree\', 4, \'IT Department\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `responses` (`question_id`, `response_value`, `id`, `department_id`) VALUES (:question_id:, :response_value:, :id:, :department_id:)', [...], false)
+ 5 APPPATH\Controllers\Survey.php(159): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->submitResponseDept()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+ERROR - 2024-10-28 07:08:31 --> mysqli_sql_exception: Column 'area_went' cannot be null in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\app\Controllers\Survey.php(149): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\Survey->submitResponseDept()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#10 {main}
+CRITICAL - 2024-10-28 07:08:31 --> Column 'area_went' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `respondent_tbl` (`respondent_name`, `area_went`) VALUES (\'\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `respondent_tbl` (`respondent_name`, `area_went`) VALUES (\'\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `respondent_tbl` (`respondent_name`, `area_went`) VALUES (\'\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `respondent_tbl` (`respondent_name`, `area_went`) VALUES (:respondent_name:, :area_went:)', [...], false)
+ 5 APPPATH\Controllers\Survey.php(149): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->submitResponseDept()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+ERROR - 2024-10-28 07:10:51 --> mysqli_sql_exception: Column 'area_went' cannot be null in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\app\Controllers\Survey.php(149): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\Survey->submitResponseDept()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#10 {main}
+CRITICAL - 2024-10-28 07:10:51 --> Column 'area_went' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `respondent_tbl` (`respondent_name`, `area_went`) VALUES (\'qw\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `respondent_tbl` (`respondent_name`, `area_went`) VALUES (\'qw\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `respondent_tbl` (`respondent_name`, `area_went`) VALUES (\'qw\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `respondent_tbl` (`respondent_name`, `area_went`) VALUES (:respondent_name:, :area_went:)', [...], false)
+ 5 APPPATH\Controllers\Survey.php(149): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->submitResponseDept()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-28 08:14:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-28 08:14:18 --> Undefined property: CodeIgniter\View\View::$db
+in APPPATH\Views\pages\blog.php on line 225.
+ 1 APPPATH\Views\pages\blog.php(225): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$db', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 225)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(56): view('/pages/blog', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-28 08:14:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-28 08:14:36 --> Undefined property: CodeIgniter\View\View::$db
+in APPPATH\Views\pages\blog.php on line 225.
+ 1 APPPATH\Views\pages\blog.php(225): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$db', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 225)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(56): view('/pages/blog', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-28 08:16:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-28 08:16:51 --> Undefined property: CodeIgniter\View\View::$db
+in APPPATH\Views\pages\blog.php on line 225.
+ 1 APPPATH\Views\pages\blog.php(225): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$db', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 225)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(56): view('/pages/blog', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-28 08:20:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-28 08:20:42 --> Undefined property: CodeIgniter\View\View::$db
+in APPPATH\Views\pages\blog.php on line 225.
+ 1 APPPATH\Views\pages\blog.php(225): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$db', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 225)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(56): view('/pages/blog', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-28 08:25:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-28 08:25:24 --> Undefined variable $results
+in APPPATH\Views\pages\blog.php on line 231.
+ 1 APPPATH\Views\pages\blog.php(231): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $results', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 231)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(56): view('/pages/blog', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-28 08:26:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-28 08:26:25 --> Undefined variable $results
+in APPPATH\Views\pages\blog.php on line 231.
+ 1 APPPATH\Views\pages\blog.php(231): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $results', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 231)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(56): view('/pages/blog', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-28 08:27:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-28 08:27:27 --> Undefined variable $results
+in APPPATH\Views\pages\blog.php on line 231.
+ 1 APPPATH\Views\pages\blog.php(231): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $results', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 231)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(63): view('/pages/blog', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-28 08:27:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-28 08:27:29 --> Undefined variable $results
+in APPPATH\Views\pages\blog.php on line 231.
+ 1 APPPATH\Views\pages\blog.php(231): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $results', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 231)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(63): view('/pages/blog', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-28 08:27:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-28 08:27:54 --> Undefined variable $results
+in APPPATH\Views\pages\blog.php on line 231.
+ 1 APPPATH\Views\pages\blog.php(231): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $results', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 231)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(63): view('/pages/blog', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-28 08:32:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-28 08:32:16 --> Undefined variable $questions
+in APPPATH\Views\SurveyPage\Question.php on line 161.
+ 1 APPPATH\Views\SurveyPage\Question.php(161): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $questions', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php', 161)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('SurveyPage/Question', [], true)
+ 5 APPPATH\Controllers\Survey.php(181): view('SurveyPage/Question', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->showResults()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-28 08:33:15 --> Undefined variable $questions
+in APPPATH\Views\SurveyPage\Question.php on line 161.
+ 1 APPPATH\Views\SurveyPage\Question.php(161): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $questions', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php', 161)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('SurveyPage/Question', [], true)
+ 5 APPPATH\Controllers\Survey.php(181): view('SurveyPage/Question', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->showResults()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-28 08:33:36 --> Undefined variable $questions
+in APPPATH\Views\SurveyPage\Question.php on line 161.
+ 1 APPPATH\Views\SurveyPage\Question.php(161): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $questions', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php', 161)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('SurveyPage/Question', [], true)
+ 5 APPPATH\Controllers\Survey.php(181): view('SurveyPage/Question', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->showResults()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-28 08:33:38 --> Undefined variable $questions
+in APPPATH\Views\SurveyPage\Question.php on line 161.
+ 1 APPPATH\Views\SurveyPage\Question.php(161): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $questions', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php', 161)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('SurveyPage/Question', [], true)
+ 5 APPPATH\Controllers\Survey.php(181): view('SurveyPage/Question', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->showResults()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-28 08:34:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-28 08:34:42 --> Undefined variable $results
+in APPPATH\Views\SurveyPage\Question.php on line 210.
+ 1 APPPATH\Views\SurveyPage\Question.php(210): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $results', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php', 210)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('SurveyPage/Question', [], true)
+ 5 APPPATH\Controllers\Survey.php(103): view('SurveyPage/Question', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->loadQuestions()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-28 08:34:43 --> Undefined variable $results
+in APPPATH\Views\SurveyPage\Question.php on line 210.
+ 1 APPPATH\Views\SurveyPage\Question.php(210): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $results', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php', 210)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\SurveyPage\\Question.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('SurveyPage/Question', [], true)
+ 5 APPPATH\Controllers\Survey.php(103): view('SurveyPage/Question', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Survey->loadQuestions()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-28 08:35:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-28 08:42:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-28 08:42:52 --> Undefined variable $todayCounts
+in APPPATH\Views\pages\blog.php on line 50.
+ 1 APPPATH\Views\pages\blog.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $todayCounts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 50)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(94): view('/pages/blog', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->showResults()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-28 08:42:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-28 08:42:57 --> Undefined variable $results
+in APPPATH\Views\pages\blog.php on line 231.
+ 1 APPPATH\Views\pages\blog.php(231): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $results', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 231)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(63): view('/pages/blog', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-28 08:43:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-28 08:43:17 --> Undefined variable $results
+in APPPATH\Views\pages\blog.php on line 231.
+ 1 APPPATH\Views\pages\blog.php(231): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $results', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 231)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(63): view('/pages/blog', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-28 08:44:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-28 08:44:00 --> Cannot access offset of type string on string
+in APPPATH\Views\pages\blog.php on line 233.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 4 APPPATH\Controllers\Home.php(63): view('/pages/blog', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-28 08:48:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-28 08:48:16 --> Undefined variable $results
+in APPPATH\Views\pages\blog.php on line 231.
+ 1 APPPATH\Views\pages\blog.php(231): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $results', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 231)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(63): view('/pages/blog', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-28 08:48:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-28 08:48:45 --> Undefined variable $results
+in APPPATH\Views\pages\blog.php on line 231.
+ 1 APPPATH\Views\pages\blog.php(231): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $results', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 231)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(63): view('/pages/blog', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-28 08:48:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-28 08:48:47 --> Undefined variable $results
+in APPPATH\Views\pages\blog.php on line 231.
+ 1 APPPATH\Views\pages\blog.php(231): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $results', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 231)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(63): view('/pages/blog', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-28 08:48:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-28 08:48:53 --> Undefined variable $results
+in APPPATH\Views\pages\blog.php on line 231.
+ 1 APPPATH\Views\pages\blog.php(231): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $results', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 231)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(63): view('/pages/blog', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-28 08:52:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-28 08:52:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

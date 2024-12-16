@@ -1,0 +1,1919 @@
+CRITICAL - 2024-10-10 00:51:23 --> syntax error, unexpected token "}", expecting ";"
+in APPPATH\Controllers\SurveyController.php on line 28.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\user 1\\Desktop\\Starter\\app\\Controllers\\SurveyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\SurveyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\SurveyController')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\SurveyController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 00:51:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 00:51:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 00:51:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 00:52:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 00:52:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 01:10:27 --> Undefined variable $departments
+in APPPATH\Views\pages\blog.php on line 77.
+ 1 APPPATH\Views\pages\blog.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departments', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 77)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('/pages/blog')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-10 01:10:27 --> Undefined variable $departments
+in APPPATH\Views\pages\blog.php on line 77.
+ 1 APPPATH\Views\pages\blog.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departments', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 77)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('/pages/blog')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-10 01:10:34 --> Undefined variable $departments
+in APPPATH\Views\pages\blog.php on line 77.
+ 1 APPPATH\Views\pages\blog.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departments', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 77)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('/pages/blog')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-10 01:15:06 --> Undefined variable $departments
+in APPPATH\Views\pages\blog.php on line 77.
+ 1 APPPATH\Views\pages\blog.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departments', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 77)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('/pages/blog')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-10 01:16:22 --> Undefined variable $departments
+in APPPATH\Views\pages\blog.php on line 77.
+ 1 APPPATH\Views\pages\blog.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departments', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 77)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('/pages/blog')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-10 01:17:53 --> Undefined variable $departments
+in APPPATH\Views\pages\blog.php on line 77.
+ 1 APPPATH\Views\pages\blog.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departments', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 77)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('/pages/blog')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-10 01:18:55 --> Undefined variable $departments
+in APPPATH\Views\pages\blog.php on line 77.
+ 1 APPPATH\Views\pages\blog.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departments', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 77)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('/pages/blog')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-10 01:18:56 --> Undefined variable $departments
+in APPPATH\Views\pages\blog.php on line 77.
+ 1 APPPATH\Views\pages\blog.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departments', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 77)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('/pages/blog')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-10 01:18:57 --> Undefined variable $departments
+in APPPATH\Views\pages\blog.php on line 77.
+ 1 APPPATH\Views\pages\blog.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departments', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 77)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('/pages/blog')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-10 01:18:57 --> Undefined variable $departments
+in APPPATH\Views\pages\blog.php on line 77.
+ 1 APPPATH\Views\pages\blog.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departments', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 77)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('/pages/blog')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+CRITICAL - 2024-10-10 01:20:40 --> Undefined variable $depts
+in APPPATH\Views\pages\blog.php on line 77.
+ 1 APPPATH\Views\pages\blog.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 77)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('/pages/blog')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 01:22:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 01:22:28 --> Undefined variable $depts
+in APPPATH\Views\pages\blog.php on line 87.
+ 1 APPPATH\Views\pages\blog.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 87)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('/pages/blog')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 01:23:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 01:23:33 --> Undefined variable $users
+in APPPATH\Views\pages\blog.php on line 246.
+ 1 APPPATH\Views\pages\blog.php(246): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 246)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('/pages/blog')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 01:23:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 01:25:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 01:25:21 --> Undefined variable $users
+in APPPATH\Views\pages\blog.php on line 246.
+ 1 APPPATH\Views\pages\blog.php(246): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 246)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('/pages/blog')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 01:28:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 01:28:40 --> Undefined variable $depts
+in APPPATH\Views\pages\blog.php on line 141.
+ 1 APPPATH\Views\pages\blog.php(141): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 141)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('/pages/blog')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 01:33:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 01:33:41 --> Undefined variable $depts
+in APPPATH\Views\pages\blog.php on line 141.
+ 1 APPPATH\Views\pages\blog.php(141): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 141)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('/pages/blog')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 01:36:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 01:36:12 --> Undefined variable $depts
+in APPPATH\Views\pages\blog.php on line 141.
+ 1 APPPATH\Views\pages\blog.php(141): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 141)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('/pages/blog')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 01:39:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 01:39:02 --> Undefined variable $depts
+in APPPATH\Views\pages\blog.php on line 141.
+ 1 APPPATH\Views\pages\blog.php(141): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 141)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('/pages/blog')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 01:39:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 01:39:04 --> Undefined variable $depts
+in APPPATH\Views\pages\blog.php on line 141.
+ 1 APPPATH\Views\pages\blog.php(141): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 141)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('/pages/blog')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 01:40:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 01:40:48 --> Undefined variable $depts
+in APPPATH\Views\pages\blog.php on line 141.
+ 1 APPPATH\Views\pages\blog.php(141): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 141)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('/pages/blog')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 01:41:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 01:41:09 --> Undefined variable $depts
+in APPPATH\Views\pages\blog.php on line 141.
+ 1 APPPATH\Views\pages\blog.php(141): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 141)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('/pages/blog')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 01:41:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 01:41:11 --> Undefined variable $depts
+in APPPATH\Views\pages\blog.php on line 141.
+ 1 APPPATH\Views\pages\blog.php(141): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 141)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('/pages/blog')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 01:41:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 01:41:11 --> Undefined variable $depts
+in APPPATH\Views\pages\blog.php on line 141.
+ 1 APPPATH\Views\pages\blog.php(141): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 141)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('/pages/blog')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 01:41:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 01:41:11 --> Undefined variable $depts
+in APPPATH\Views\pages\blog.php on line 141.
+ 1 APPPATH\Views\pages\blog.php(141): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php', 141)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\blog.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/pages/blog', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('/pages/blog')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 01:43:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 01:43:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 01:44:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 01:44:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 01:44:08 --> Undefined variable $depts
+in APPPATH\Views\pages\surveyquestionnaire.php on line 141.
+ 1 APPPATH\Views\pages\surveyquestionnaire.php(141): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php', 141)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyquestionnaire', [], true)
+ 5 APPPATH\Controllers\SurveyController.php(25): view('pages/surveyquestionnaire')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 01:44:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 01:44:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 01:47:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 01:47:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 01:47:30 --> Undefined variable $depts
+in APPPATH\Views\pages\surveyquestionnaire.php on line 88.
+ 1 APPPATH\Views\pages\surveyquestionnaire.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php', 88)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyquestionnaire', [], true)
+ 5 APPPATH\Controllers\SurveyController.php(25): view('pages/surveyquestionnaire')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 01:47:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 01:47:33 --> Undefined variable $depts
+in APPPATH\Views\pages\surveyquestionnaire.php on line 88.
+ 1 APPPATH\Views\pages\surveyquestionnaire.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php', 88)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyquestionnaire', [], true)
+ 5 APPPATH\Controllers\SurveyController.php(25): view('pages/surveyquestionnaire')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 01:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 01:52:49 --> Undefined variable $user
+in APPPATH\Views\pages\usertable.php on line 192.
+ 1 APPPATH\Views\pages\usertable.php(192): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\usertable.php', 192)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\usertable.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/usertable', [], true)
+ 5 APPPATH\Controllers\UserController.php(25): view('pages/usertable', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\UserController->UserTableList()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 01:52:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 01:52:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 01:52:53 --> Undefined variable $user
+in APPPATH\Views\pages\usertable.php on line 192.
+ 1 APPPATH\Views\pages\usertable.php(192): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\usertable.php', 192)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\usertable.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/usertable', [], true)
+ 5 APPPATH\Controllers\UserController.php(25): view('pages/usertable', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\UserController->UserTableList()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 01:53:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 01:53:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 01:53:40 --> Undefined variable $depts
+in APPPATH\Views\pages\surveyquestionnaire.php on line 88.
+ 1 APPPATH\Views\pages\surveyquestionnaire.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php', 88)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyquestionnaire', [], true)
+ 5 APPPATH\Controllers\SurveyController.php(25): view('pages/surveyquestionnaire')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 01:57:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 01:57:36 --> Undefined variable $insertdepartment
+in APPPATH\Views\pages\surveyquestionnaire.php on line 88.
+ 1 APPPATH\Views\pages\surveyquestionnaire.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $insertdepartment', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php', 88)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyquestionnaire', [], true)
+ 5 APPPATH\Controllers\SurveyController.php(25): view('pages/surveyquestionnaire')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 02:01:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 02:01:05 --> Undefined variable $insertdepartment
+in APPPATH\Views\pages\surveyquestionnaire.php on line 88.
+ 1 APPPATH\Views\pages\surveyquestionnaire.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $insertdepartment', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php', 88)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyquestionnaire', [], true)
+ 5 APPPATH\Controllers\SurveyController.php(25): view('pages/surveyquestionnaire')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 02:01:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 02:01:18 --> Undefined variable $depts
+in APPPATH\Views\pages\surveyquestionnaire.php on line 88.
+ 1 APPPATH\Views\pages\surveyquestionnaire.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php', 88)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyquestionnaire', [], true)
+ 5 APPPATH\Controllers\SurveyController.php(25): view('pages/surveyquestionnaire')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 02:01:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 02:01:18 --> Undefined variable $depts
+in APPPATH\Views\pages\surveyquestionnaire.php on line 88.
+ 1 APPPATH\Views\pages\surveyquestionnaire.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php', 88)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyquestionnaire', [], true)
+ 5 APPPATH\Controllers\SurveyController.php(25): view('pages/surveyquestionnaire')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 02:01:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 02:01:18 --> Undefined variable $depts
+in APPPATH\Views\pages\surveyquestionnaire.php on line 88.
+ 1 APPPATH\Views\pages\surveyquestionnaire.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php', 88)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyquestionnaire', [], true)
+ 5 APPPATH\Controllers\SurveyController.php(25): view('pages/surveyquestionnaire')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 02:01:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 02:01:19 --> Undefined variable $depts
+in APPPATH\Views\pages\surveyquestionnaire.php on line 88.
+ 1 APPPATH\Views\pages\surveyquestionnaire.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php', 88)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyquestionnaire', [], true)
+ 5 APPPATH\Controllers\SurveyController.php(25): view('pages/surveyquestionnaire')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 02:03:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 02:03:13 --> Undefined variable $depts
+in APPPATH\Views\pages\surveyquestionnaire.php on line 88.
+ 1 APPPATH\Views\pages\surveyquestionnaire.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php', 88)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyquestionnaire', [], true)
+ 5 APPPATH\Controllers\SurveyController.php(25): view('pages/surveyquestionnaire')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 02:03:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 02:03:19 --> Undefined variable $depts
+in APPPATH\Views\pages\surveyquestionnaire.php on line 88.
+ 1 APPPATH\Views\pages\surveyquestionnaire.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php', 88)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyquestionnaire', [], true)
+ 5 APPPATH\Controllers\SurveyController.php(25): view('pages/surveyquestionnaire')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 02:03:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 02:03:19 --> Undefined variable $depts
+in APPPATH\Views\pages\surveyquestionnaire.php on line 88.
+ 1 APPPATH\Views\pages\surveyquestionnaire.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php', 88)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyquestionnaire', [], true)
+ 5 APPPATH\Controllers\SurveyController.php(25): view('pages/surveyquestionnaire')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 02:04:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 02:04:58 --> Undefined variable $depts
+in APPPATH\Views\pages\surveyquestionnaire.php on line 88.
+ 1 APPPATH\Views\pages\surveyquestionnaire.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php', 88)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyquestionnaire', [], true)
+ 5 APPPATH\Controllers\SurveyController.php(25): view('pages/surveyquestionnaire')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 02:05:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 02:05:01 --> Undefined variable $depts
+in APPPATH\Views\pages\surveyquestionnaire.php on line 88.
+ 1 APPPATH\Views\pages\surveyquestionnaire.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php', 88)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyquestionnaire', [], true)
+ 5 APPPATH\Controllers\SurveyController.php(25): view('pages/surveyquestionnaire')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 02:05:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 02:05:01 --> Undefined variable $depts
+in APPPATH\Views\pages\surveyquestionnaire.php on line 88.
+ 1 APPPATH\Views\pages\surveyquestionnaire.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php', 88)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyquestionnaire', [], true)
+ 5 APPPATH\Controllers\SurveyController.php(25): view('pages/surveyquestionnaire')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 02:05:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 02:05:09 --> Undefined variable $depts
+in APPPATH\Views\pages\surveyquestionnaire.php on line 88.
+ 1 APPPATH\Views\pages\surveyquestionnaire.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php', 88)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyquestionnaire', [], true)
+ 5 APPPATH\Controllers\SurveyController.php(25): view('pages/surveyquestionnaire')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 02:05:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 02:05:10 --> Undefined variable $depts
+in APPPATH\Views\pages\surveyquestionnaire.php on line 88.
+ 1 APPPATH\Views\pages\surveyquestionnaire.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php', 88)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyquestionnaire', [], true)
+ 5 APPPATH\Controllers\SurveyController.php(25): view('pages/surveyquestionnaire')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 02:05:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 02:05:10 --> Undefined variable $depts
+in APPPATH\Views\pages\surveyquestionnaire.php on line 88.
+ 1 APPPATH\Views\pages\surveyquestionnaire.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php', 88)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyquestionnaire', [], true)
+ 5 APPPATH\Controllers\SurveyController.php(25): view('pages/surveyquestionnaire')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 02:05:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 02:05:10 --> Undefined variable $depts
+in APPPATH\Views\pages\surveyquestionnaire.php on line 88.
+ 1 APPPATH\Views\pages\surveyquestionnaire.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php', 88)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyquestionnaire', [], true)
+ 5 APPPATH\Controllers\SurveyController.php(25): view('pages/surveyquestionnaire')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 02:05:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 02:05:36 --> Undefined variable $depts
+in APPPATH\Views\pages\surveyquestionnaire.php on line 88.
+ 1 APPPATH\Views\pages\surveyquestionnaire.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php', 88)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyquestionnaire', [], true)
+ 5 APPPATH\Controllers\SurveyController.php(25): view('pages/surveyquestionnaire')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+ERROR - 2024-10-10 02:07:47 --> mysqli_sql_exception: Tablespace for table '`cssdbase`.`migrations`' exists. Please DISCARD the tablespace before IMPORT in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `m...', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `m...')
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `m...')
+#3 C:\Users\user 1\Desktop\Starter\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `m...')
+#4 C:\Users\user 1\Desktop\Starter\system\Database\MigrationRunner.php(815): CodeIgniter\Database\Forge->createTable('migrations', true)
+#5 C:\Users\user 1\Desktop\Starter\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\Users\user 1\Desktop\Starter\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\Users\user 1\Desktop\Starter\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\Users\user 1\Desktop\Starter\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\Users\user 1\Desktop\Starter\spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
+INFO - 2024-10-10 02:09:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 02:09:48 --> Undefined variable $depts
+in APPPATH\Views\pages\surveyquestionnaire.php on line 88.
+ 1 APPPATH\Views\pages\surveyquestionnaire.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php', 88)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyquestionnaire', [], true)
+ 5 APPPATH\Controllers\SurveyController.php(25): view('pages/surveyquestionnaire')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 02:09:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 02:09:49 --> Undefined variable $depts
+in APPPATH\Views\pages\surveyquestionnaire.php on line 88.
+ 1 APPPATH\Views\pages\surveyquestionnaire.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php', 88)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyquestionnaire', [], true)
+ 5 APPPATH\Controllers\SurveyController.php(25): view('pages/surveyquestionnaire')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 02:09:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 02:09:49 --> Undefined variable $depts
+in APPPATH\Views\pages\surveyquestionnaire.php on line 88.
+ 1 APPPATH\Views\pages\surveyquestionnaire.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php', 88)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyquestionnaire', [], true)
+ 5 APPPATH\Controllers\SurveyController.php(25): view('pages/surveyquestionnaire')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 02:09:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 02:09:50 --> Undefined variable $depts
+in APPPATH\Views\pages\surveyquestionnaire.php on line 88.
+ 1 APPPATH\Views\pages\surveyquestionnaire.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php', 88)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyquestionnaire', [], true)
+ 5 APPPATH\Controllers\SurveyController.php(25): view('pages/surveyquestionnaire')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 02:11:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 02:11:22 --> Undefined variable $depts
+in APPPATH\Views\pages\surveyquestionnaire.php on line 88.
+ 1 APPPATH\Views\pages\surveyquestionnaire.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php', 88)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyquestionnaire', [], true)
+ 5 APPPATH\Controllers\SurveyController.php(25): view('pages/surveyquestionnaire')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 02:11:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 02:11:22 --> Undefined variable $depts
+in APPPATH\Views\pages\surveyquestionnaire.php on line 88.
+ 1 APPPATH\Views\pages\surveyquestionnaire.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php', 88)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyquestionnaire', [], true)
+ 5 APPPATH\Controllers\SurveyController.php(25): view('pages/surveyquestionnaire')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 02:11:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 02:11:23 --> Undefined variable $depts
+in APPPATH\Views\pages\surveyquestionnaire.php on line 88.
+ 1 APPPATH\Views\pages\surveyquestionnaire.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php', 88)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyquestionnaire', [], true)
+ 5 APPPATH\Controllers\SurveyController.php(25): view('pages/surveyquestionnaire')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 02:11:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 02:11:23 --> Undefined variable $depts
+in APPPATH\Views\pages\surveyquestionnaire.php on line 88.
+ 1 APPPATH\Views\pages\surveyquestionnaire.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php', 88)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyquestionnaire', [], true)
+ 5 APPPATH\Controllers\SurveyController.php(25): view('pages/surveyquestionnaire')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 02:11:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 02:11:23 --> Undefined variable $depts
+in APPPATH\Views\pages\surveyquestionnaire.php on line 88.
+ 1 APPPATH\Views\pages\surveyquestionnaire.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php', 88)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyquestionnaire', [], true)
+ 5 APPPATH\Controllers\SurveyController.php(25): view('pages/surveyquestionnaire')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 02:11:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 02:11:23 --> Undefined variable $depts
+in APPPATH\Views\pages\surveyquestionnaire.php on line 88.
+ 1 APPPATH\Views\pages\surveyquestionnaire.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php', 88)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyquestionnaire', [], true)
+ 5 APPPATH\Controllers\SurveyController.php(25): view('pages/surveyquestionnaire')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 02:11:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 02:11:24 --> Undefined variable $depts
+in APPPATH\Views\pages\surveyquestionnaire.php on line 88.
+ 1 APPPATH\Views\pages\surveyquestionnaire.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php', 88)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyquestionnaire', [], true)
+ 5 APPPATH\Controllers\SurveyController.php(25): view('pages/surveyquestionnaire')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 02:15:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 02:15:39 --> Undefined variable $depts
+in APPPATH\Views\pages\surveyquestionnaire.php on line 88.
+ 1 APPPATH\Views\pages\surveyquestionnaire.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php', 88)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyquestionnaire', [], true)
+ 5 APPPATH\Controllers\SurveyController.php(12): view('pages/surveyquestionnaire')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 02:17:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 02:17:24 --> Undefined variable $depts
+in APPPATH\Views\pages\surveyquestionnaire.php on line 88.
+ 1 APPPATH\Views\pages\surveyquestionnaire.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php', 88)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyquestionnaire', [], true)
+ 5 APPPATH\Controllers\SurveyController.php(12): view('pages/surveyquestionnaire')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 02:17:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 02:17:24 --> Undefined variable $depts
+in APPPATH\Views\pages\surveyquestionnaire.php on line 88.
+ 1 APPPATH\Views\pages\surveyquestionnaire.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php', 88)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyquestionnaire', [], true)
+ 5 APPPATH\Controllers\SurveyController.php(12): view('pages/surveyquestionnaire')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 02:18:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 02:18:05 --> Undefined variable $depts
+in APPPATH\Views\pages\surveyquestionnaire.php on line 88.
+ 1 APPPATH\Views\pages\surveyquestionnaire.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php', 88)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyquestionnaire', [], true)
+ 5 APPPATH\Controllers\SurveyController.php(12): view('pages/surveyquestionnaire')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 02:18:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 02:18:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 02:18:10 --> Undefined variable $depts
+in APPPATH\Views\pages\surveyquestionnaire.php on line 88.
+ 1 APPPATH\Views\pages\surveyquestionnaire.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php', 88)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyquestionnaire', [], true)
+ 5 APPPATH\Controllers\SurveyController.php(12): view('pages/surveyquestionnaire')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 02:19:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 02:19:29 --> Undefined variable $depts
+in APPPATH\Views\pages\surveyquestionnaire.php on line 88.
+ 1 APPPATH\Views\pages\surveyquestionnaire.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php', 88)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyquestionnaire', [], true)
+ 5 APPPATH\Controllers\SurveyController.php(12): view('pages/surveyquestionnaire')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 02:19:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 02:19:32 --> Undefined variable $depts
+in APPPATH\Views\pages\surveyquestionnaire.php on line 88.
+ 1 APPPATH\Views\pages\surveyquestionnaire.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php', 88)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyquestionnaire', [], true)
+ 5 APPPATH\Controllers\SurveyController.php(12): view('pages/surveyquestionnaire')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 02:23:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 02:23:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 02:23:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 02:23:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 02:29:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 02:29:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 02:30:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 02:31:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-10-10 02:36:55 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cssdbase', 3306, '', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\user 1\Desktop\Starter\app\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+#9 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\user 1\Desktop\Starter\app\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#11 {main}
+CRITICAL - 2024-10-10 02:36:55 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `questions_tbl`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+ERROR - 2024-10-10 02:37:30 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cssdbase', 3306, '', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\user 1\Desktop\Starter\app\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+#9 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\user 1\Desktop\Starter\app\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#11 {main}
+CRITICAL - 2024-10-10 02:37:30 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `questions_tbl`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+ERROR - 2024-10-10 02:38:55 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cssdbase', 3306, '', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\user 1\Desktop\Starter\app\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+#9 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\user 1\Desktop\Starter\app\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#11 {main}
+CRITICAL - 2024-10-10 02:38:55 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `questions_tbl`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+ERROR - 2024-10-10 02:38:59 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cssdbase', 3306, '', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\user 1\Desktop\Starter\app\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+#9 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\user 1\Desktop\Starter\app\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#11 {main}
+CRITICAL - 2024-10-10 02:38:59 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `questions_tbl`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+ERROR - 2024-10-10 02:39:03 --> Error connecting to the database: mysqli_sql_exception: Host 'localhost' is not allowed to connect to this MariaDB server in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cssdbase', 3306, '', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\user 1\Desktop\Starter\app\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+#9 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Host 'localhost' is not allowed to connect to this MariaDB server in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\user 1\Desktop\Starter\app\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#11 {main}
+CRITICAL - 2024-10-10 02:39:03 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `questions_tbl`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+ERROR - 2024-10-10 02:39:06 --> Error connecting to the database: mysqli_sql_exception: Host 'localhost' is not allowed to connect to this MariaDB server in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cssdbase', 3306, '', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\user 1\Desktop\Starter\app\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+#9 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Host 'localhost' is not allowed to connect to this MariaDB server in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\user 1\Desktop\Starter\app\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#11 {main}
+CRITICAL - 2024-10-10 02:39:06 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `questions_tbl`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 02:39:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 02:39:08 --> Undefined variable $depts
+in APPPATH\Views\pages\surveyquestionnaire.php on line 88.
+ 1 APPPATH\Views\pages\surveyquestionnaire.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php', 88)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyquestionnaire', [], true)
+ 5 APPPATH\Controllers\SurveyController.php(12): view('pages/surveyquestionnaire')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 02:39:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 02:39:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 02:39:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 02:39:15 --> Undefined variable $depts
+in APPPATH\Views\pages\surveyquestionnaire.php on line 88.
+ 1 APPPATH\Views\pages\surveyquestionnaire.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depts', 'C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php', 88)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\pages\\surveyquestionnaire.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/surveyquestionnaire', [], true)
+ 5 APPPATH\Controllers\SurveyController.php(12): view('pages/surveyquestionnaire')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+ERROR - 2024-10-10 02:41:16 --> Error connecting to the database: mysqli_sql_exception: Host 'localhost' is not allowed to connect to this MariaDB server in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cssdbase', 3306, '', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\user 1\Desktop\Starter\app\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+#9 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Host 'localhost' is not allowed to connect to this MariaDB server in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\user 1\Desktop\Starter\app\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#11 {main}
+CRITICAL - 2024-10-10 02:41:16 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `questions_tbl`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+ERROR - 2024-10-10 03:03:02 --> Error connecting to the database: mysqli_sql_exception: Host 'localhost' is not allowed to connect to this MariaDB server in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cssdbase', 3306, '', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\user 1\Desktop\Starter\app\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+#9 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Host 'localhost' is not allowed to connect to this MariaDB server in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\user 1\Desktop\Starter\app\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#11 {main}
+CRITICAL - 2024-10-10 03:03:02 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `questions_tbl`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+ERROR - 2024-10-10 03:03:25 --> Error connecting to the database: mysqli_sql_exception: Host 'localhost' is not allowed to connect to this MariaDB server in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cssdbase', 3306, '', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\user 1\Desktop\Starter\app\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+#9 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Host 'localhost' is not allowed to connect to this MariaDB server in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\user 1\Desktop\Starter\app\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#11 {main}
+CRITICAL - 2024-10-10 03:03:25 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `questions_tbl`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+ERROR - 2024-10-10 03:04:28 --> Error connecting to the database: mysqli_sql_exception: Host 'localhost' is not allowed to connect to this MariaDB server in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cssdbase', 3306, '', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\user 1\Desktop\Starter\app\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+#9 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Host 'localhost' is not allowed to connect to this MariaDB server in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\user 1\Desktop\Starter\app\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#11 {main}
+CRITICAL - 2024-10-10 03:04:28 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `questions_tbl`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+ERROR - 2024-10-10 03:04:55 --> Error connecting to the database: mysqli_sql_exception: Host 'localhost' is not allowed to connect to this MariaDB server in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cssdbase', 3306, '', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\user 1\Desktop\Starter\app\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+#9 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Host 'localhost' is not allowed to connect to this MariaDB server in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\user 1\Desktop\Starter\app\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#11 {main}
+CRITICAL - 2024-10-10 03:04:55 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `questions_tbl`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+ERROR - 2024-10-10 03:05:42 --> Error connecting to the database: mysqli_sql_exception: Host 'localhost' is not allowed to connect to this MariaDB server in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cssdbase', 3306, '', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\user 1\Desktop\Starter\app\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+#9 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Host 'localhost' is not allowed to connect to this MariaDB server in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\user 1\Desktop\Starter\app\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#11 {main}
+CRITICAL - 2024-10-10 03:05:42 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `questions_tbl`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+ERROR - 2024-10-10 03:05:59 --> Error connecting to the database: mysqli_sql_exception: Host 'localhost' is not allowed to connect to this MariaDB server in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cssdbase', 3306, '', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\user 1\Desktop\Starter\app\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+#9 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Host 'localhost' is not allowed to connect to this MariaDB server in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\user 1\Desktop\Starter\app\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#11 {main}
+CRITICAL - 2024-10-10 03:05:59 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `questions_tbl`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+ERROR - 2024-10-10 03:06:12 --> Error connecting to the database: mysqli_sql_exception: Host 'localhost' is not allowed to connect to this MariaDB server in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cssdbase', 3306, '', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\user 1\Desktop\Starter\app\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+#9 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Host 'localhost' is not allowed to connect to this MariaDB server in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\user 1\Desktop\Starter\app\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#11 {main}
+CRITICAL - 2024-10-10 03:06:12 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `questions_tbl`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+ERROR - 2024-10-10 03:06:26 --> Error connecting to the database: mysqli_sql_exception: Host 'localhost' is not allowed to connect to this MariaDB server in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cssdbase', 3306, '', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\user 1\Desktop\Starter\app\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+#9 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Host 'localhost' is not allowed to connect to this MariaDB server in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\user 1\Desktop\Starter\app\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#11 {main}
+CRITICAL - 2024-10-10 03:06:26 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `questions_tbl`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+ERROR - 2024-10-10 03:07:45 --> Error connecting to the database: mysqli_sql_exception: Host 'localhost' is not allowed to connect to this MariaDB server in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cssdbase', 3306, '', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\user 1\Desktop\Starter\app\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+#9 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Host 'localhost' is not allowed to connect to this MariaDB server in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\user 1\Desktop\Starter\app\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#11 {main}
+CRITICAL - 2024-10-10 03:07:45 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `questions_tbl`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+ERROR - 2024-10-10 03:09:08 --> Error connecting to the database: mysqli_sql_exception: Host 'localhost' is not allowed to connect to this MariaDB server in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cssdbase', 3306, '', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\user 1\Desktop\Starter\app\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+#9 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Host 'localhost' is not allowed to connect to this MariaDB server in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\user 1\Desktop\Starter\app\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#11 {main}
+CRITICAL - 2024-10-10 03:09:08 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `questions_tbl`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+ERROR - 2024-10-10 03:09:34 --> Error connecting to the database: mysqli_sql_exception: Host 'localhost' is not allowed to connect to this MariaDB server in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cssdbase', 3306, '', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\user 1\Desktop\Starter\app\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+#9 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Host 'localhost' is not allowed to connect to this MariaDB server in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\user 1\Desktop\Starter\app\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#11 {main}
+CRITICAL - 2024-10-10 03:09:34 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `questions_tbl`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+ERROR - 2024-10-10 03:09:35 --> Error connecting to the database: mysqli_sql_exception: Host 'localhost' is not allowed to connect to this MariaDB server in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cssdbase', 3306, '', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\user 1\Desktop\Starter\app\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+#9 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Host 'localhost' is not allowed to connect to this MariaDB server in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\user 1\Desktop\Starter\app\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#11 {main}
+CRITICAL - 2024-10-10 03:09:35 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `questions_tbl`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+ERROR - 2024-10-10 03:09:37 --> Error connecting to the database: mysqli_sql_exception: Host 'localhost' is not allowed to connect to this MariaDB server in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cssdbase', 3306, '', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\user 1\Desktop\Starter\app\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+#9 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Host 'localhost' is not allowed to connect to this MariaDB server in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\user 1\Desktop\Starter\app\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#11 {main}
+CRITICAL - 2024-10-10 03:09:37 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `questions_tbl`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 03:18:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-10-10 03:18:42 --> Error connecting to the database: mysqli_sql_exception: Host 'localhost' is not allowed to connect to this MariaDB server in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cssdbase', 3306, '', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\user 1\Desktop\Starter\app\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+#9 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Host 'localhost' is not allowed to connect to this MariaDB server in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\user 1\Desktop\Starter\app\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#11 {main}
+CRITICAL - 2024-10-10 03:18:42 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `questions_tbl`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 04:49:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-10-10 04:50:44 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'cssdbase' in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cssdbase', 3306, '', 0)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\user 1\Desktop\Starter\app\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+#9 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'cssdbase' in C:\Users\user 1\Desktop\Starter\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\user 1\Desktop\Starter\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\user 1\Desktop\Starter\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\user 1\Desktop\Starter\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\user 1\Desktop\Starter\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\user 1\Desktop\Starter\app\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+#7 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+#8 C:\Users\user 1\Desktop\Starter\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\user 1\Desktop\Starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\user 1\Desktop\Starter\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1...')
+#11 {main}
+CRITICAL - 2024-10-10 04:50:44 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'cssdbase'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `questions_tbl`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\SurveyController.php(17): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\SurveyController->DepartmentTableList()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 04:59:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 04:59:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 04:59:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 04:59:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 05:00:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 05:01:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 05:01:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 05:02:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 05:02:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 05:02:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 05:02:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 05:03:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 05:03:33 --> Invalid file: "partials/main.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('partials/main.php')
+ 2 SYSTEMPATH\View\View.php(452): CodeIgniter\View\View->render('partials/main', null, true)
+ 3 APPPATH\Views\auth\login.php(1): CodeIgniter\View\View->include('partials/main')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user 1\\Desktop\\Starter\\app\\Views\\auth\\login.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('auth/login', [], true)
+ 7 APPPATH\Controllers\Auth.php(10): view('auth/login')
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Auth->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user 1\\Desktop\\Starter\\public\\index.php')
+INFO - 2024-10-10 05:03:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 05:03:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 05:06:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 05:06:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 05:06:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 05:07:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 05:08:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 05:09:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 05:10:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 05:10:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 05:11:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 05:12:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 05:14:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 05:14:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 05:47:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
